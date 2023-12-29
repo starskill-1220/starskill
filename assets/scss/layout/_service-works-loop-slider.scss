@@ -1,0 +1,64 @@
+
+@use "../common/variables";
+@use "../common/mixin";
+.service-works-loop-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    overflow: hidden;
+    margin-bottom: 30px;
+    ul {
+        padding: 0;
+        width: 100vw;
+        display: flex;
+        flex-shrink: 0;
+        &:first-child {
+            animation: slide1 200s -100s linear infinite;
+            @include mixin.sp {
+                animation: slide1 60s -30s linear infinite;
+            }
+        }
+        &:last-child {
+            animation: slide2 200s linear infinite;
+            @include mixin.sp {
+                animation: slide2 60s linear infinite;
+            }
+        }
+        li {
+            display: inline-block;
+            width: 300px;
+            height: 460px;
+            margin-right: 10px;
+            list-style: none;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 10px;
+            @include mixin.sp {
+                width: 100%;
+                height: 250px;
+                min-width: 150px;
+                min-height: 250px;
+            }
+            img {
+                display: block;
+                width: 330%;
+                height: auto;
+                transform: translateX(-45%);
+                @include mixin.sp {
+                    width: 300%;
+                }
+            }
+        }
+    }
+    &:hover {
+        ul {
+            animation-play-state: paused;
+        }
+    }
+}
+.service-works-loop-slider-text {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+}

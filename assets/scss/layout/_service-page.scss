@@ -1,0 +1,285 @@
+@use "../common/variables";
+@use "../common/mixin";
+.service-tab__list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;/* カーソルポインターに */
+  margin-bottom: 50px;
+  position: sticky;
+  top: 30px;
+  z-index: 9999999999;
+  @include mixin.sp {
+    width: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: fixed;
+    right: 16px;
+    top: 99px;
+    margin-bottom: 0;
+  }
+}
+.service-tab__item {
+  width: 32%;/* calc関数を使用し、均等に3分割する */
+  padding: 20px 0px;
+  margin: 0px 10px;
+  transition: 1s;
+  background-color: variables.$main-black;
+  border-radius: 30px;
+  text-align: center;
+  a {
+    color: variables.$text-white;
+  }
+  @include mixin.sp {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 10px;
+    a {
+      font-size: 10px;
+      line-height: 1.3em;
+    }
+  }
+}
+
+.service-tab__item.active {
+  background: variables.$strong-color;
+  a {
+    color: white;
+  }
+}
+
+.service-panel__item {
+  display: none;
+}
+.service-panel__item.active {
+  display: block;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  @include mixin.sp {
+    margin-bottom: 50px;
+  }
+  .pc {
+    display: block;
+    @include mixin.sp {
+      display: none;
+    }
+  }
+  .sp {
+    display: none;
+    @include mixin.sp {
+      display: block;
+    }
+  }
+  .service-number {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .service-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .service-img {
+    width: 40%;
+    margin-bottom: 50px;
+    @include mixin.sp {
+      margin-bottom: 30px;
+    }
+  }
+  .service-text {
+    line-height: 30px;
+    margin-bottom: 50px;
+    @include mixin.sp {
+      line-height: 24px;
+    }
+  }
+  .service-subtext {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .service-price-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .service-price {
+      font-size: 34px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .service-price--small {
+      font-size: 14px;
+    }
+    .service-price--caption {
+      width: 100%;
+      font-size: 10px;
+    }
+  }
+  .service-list-box {
+    width: 100%;
+    &::-webkit-scrollbar {
+      display:none;
+    }
+    .service-list-slider {
+      margin-bottom: 50px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow-x: scroll;
+      @include mixin.sp {
+        margin-bottom: 20px;
+      }
+      &::-webkit-scrollbar {
+        @include mixin.sp {
+          display: none;
+        }
+      }
+      .service-slider-item {
+        width: 200px;
+        min-width: 200px;
+        height: 200px;
+        background-color: variables.$sub-gray;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 10px;
+        @include mixin.sp {
+          width: 190px;
+          min-width: 190px;
+          height: 190px;
+        }
+        .service-slider-text {
+          @include mixin.sp {
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+        }
+        .service-slider-item-img {
+          width: 120px;
+          margin-bottom: 30px;
+          transform: translateY(10px);
+          @include mixin.sp {
+            width: 110px;
+          }
+        }
+        .design-img {
+          width: 120px;
+          margin-bottom: 10px;
+          @include mixin.sp {
+            width: 110px;
+          }
+        }
+        .service-slider-item-title {
+          font-size: 12px;
+          font-weight: bold;
+          margin-bottom: 5px;
+          @include mixin.sp {
+            font-size: 13px;
+            line-height: 1em;
+          }
+        }
+        .service-slider-item-price {
+          font-weight: bold;
+          margin-bottom: 25px;
+          @include mixin.sp {
+            font-size: 13px;
+            line-height: 1em;
+          }
+        }
+      }
+    }
+  }
+  .service-other-box {
+    margin-bottom: 50px;
+    .service-other-text {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .service-other-text-img {
+      margin-bottom: 20px;
+      @include mixin.sp {
+        margin-bottom: 10px;
+      }
+    }
+    .service-other-description {
+      font-size: 12px;
+      margin-bottom: 5px;
+      line-height: 18px;
+    }
+  }
+  .service__workflow-box {
+    width: 100%;
+    .service__workflow-list {
+      @include mixin.sp {
+        margin-top: 0px;
+      }
+      .service__workflow-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        @include mixin.sp {
+          justify-content: space-between;
+          margin-bottom: 40px;
+        }
+        .service__workflow-number {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          font-weight: bold;
+          width: 70px;
+          height: 70px;
+          border-radius: 100%;
+          background-color: variables.$sub-gray;
+          margin-right: 20px;
+          @include mixin.sp {
+            font-size: 24px;
+            width: 55px;
+            height: 55px;
+            margin-right: 10px;
+          }
+        }
+        .service__workflow-textbox {
+          width: 91%;
+          display: flex;
+          flex-direction: column;
+          @include mixin.sp {
+            width: 80%;
+          }
+          .service__workflow-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted variables.$main-black;
+            @include mixin.sp {
+              font-size: 4vw;
+              margin-bottom: 2px;
+              padding-bottom: 7px;
+            }
+          }
+          .service__workflow-text {
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,175 @@
+@use "../common/variables";
+@use "../common/mixin";
+
+.page-works-content-fv {
+  width: 100vw;
+  height: 100svh;
+  background-color: variables.$main-black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  @include mixin.sp {
+    
+  }
+  .page-works-content-fv__background {
+    opacity: 0.7;
+    @include mixin.sp {
+      width: auto;
+      height: 100vh;
+      position: relative;
+      left: 80%;
+    }
+  }
+  .fv-textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: fixed;
+    top: 40%;
+    right: 10vw;
+    transform: translateY(-50%);
+    z-index: 0;
+    @include mixin.sp {
+      width: 100%;
+      position: absolute;
+      top: calc(50% - 50px);
+      right: 0;
+      margin-right: 10px;
+    }
+    .fv-textbox__title {
+      font-size: 50px;
+      font-weight: bold;
+      color:variables.$text-white;
+      letter-spacing: 10px;
+      padding: 10px 30px 10px 50px;
+      margin-bottom: 30px;
+      @include mixin.sp {
+        font-size: 7vw;
+        line-height: 1.2em;
+        letter-spacing: 1px;
+        padding: 10px 0px 10px 10px;
+        margin-bottom: 10px;
+      }
+    }
+    .fv-textbox__cat, .fv-textbox__field, .fv-textbox__link {
+      font-size: 14px;
+      font-weight: bold;
+      color: variables.$text-white;
+      letter-spacing: 1px;
+      padding: 5px 10px 7px 20px;
+      margin-bottom: 10px;
+      @include mixin.sp {
+        font-size: 3vw;
+        font-weight: 900;
+        line-height: 1.7em;
+        padding: 0px 10px 5px 10px;
+      }
+    }
+    .fv-textbox__link {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      text-decoration: underline;
+      @include mixin.sp {
+        padding: 5px 10px;
+      }
+      img {
+        width: 11px;
+        height: 11px;
+        margin-right: 7px;
+        @include mixin.sp {
+          width: 15px!important;
+          height: 15px!important;
+        }
+      }
+    }
+  }
+}
+.page-works-content__content {
+    margin-top: 100svh;
+    .content-box {
+      .container {
+        @include mixin.sp {
+          width: 100%;
+        }
+        .page-works-content__headtext-box {
+          .works-content-pageBtn {
+            width: 100%;
+            text-align: center;
+            background: variables.$strong-color;
+            font-weight: bold;
+            margin-bottom: 40px;
+            @include mixin.sp {
+              display: block;
+              width: 90%;
+              margin: 0 auto;
+              margin-bottom: 20px;
+            }
+          }
+          .page-works-content__headtext-title {
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 10px;
+            margin-bottom: 20px;
+            @include mixin.sp {
+              font-weight: 600;
+              letter-spacing: 5px;
+              padding: 0px 30px;
+              @include mixin.strong-color
+            }
+          }
+          
+          p, .page-works-content__headtext-body {
+            font-weight: 500;
+            line-height: 30px;
+            margin-bottom: 0px;
+            &:last-child {
+              margin-bottom: 60px;
+              @include mixin.sp {
+                padding-top: 10px;
+                margin-bottom: 20px;
+              }
+            }
+            @include mixin.sp {
+              line-height: 25px;
+              margin-bottom: 10px;
+              padding: 0px 30px;
+            }
+            img {
+              box-shadow: 0px 0px 10px #00000046;
+            }
+          }
+          .wp-video {
+            width: 100% !important;
+            margin-bottom: 30px;
+            border-radius: 40px;
+            overflow: hidden;
+            @include mixin.sp {
+              margin: 0 auto;
+              padding: 0px 30px;
+              margin-bottom: 30px;
+            }
+            video {
+              width: 100%!important;
+              height: auto!important;
+            }
+          }
+        }
+        img, .page-works-content__works-img {
+          border-radius: 50px;
+          margin-bottom: 50px;
+          
+          @include mixin.sp {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      
+    }
+}

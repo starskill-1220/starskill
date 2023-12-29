@@ -1,0 +1,71 @@
+@use "variables";
+
+
+@mixin sp {
+  @media screen and (max-width: (variables.$sp)) {
+    @content
+  }
+}
+
+
+@mixin strong-color {
+  background: linear-gradient(90deg, #5681f8 0%, #7B37F2 50%, #DB5F9F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@mixin effect-red1($data-text) {
+  content:attr($data-text);
+  position:absolute;
+  left:1px;
+  text-shadow:-1px 0 #de6164;
+  top:0;
+  z-index: -1;
+  color:#de6164;
+  background:rgba(255, 255, 255, 0);
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim-1 2s infinite linear alternate-reverse;
+}
+@mixin effect-blue1($data-text) {
+  content:attr($data-text);
+  position:absolute;
+  left:1px;
+  text-shadow:1px 0 #2657eb;
+  top:0;
+  z-index: -1;
+  color:variables.$main-black;
+  background:#ffffff00;
+  overflow:hidden;
+  clip:rect(0,900px,0,0);
+  animation:noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+
+@mixin effect-red2($data-text) {
+  content:attr($data-text);
+  position:absolute;
+  left:1px;
+  text-shadow:-1px 0 #de6164;
+  top:0;
+  z-index: -1;
+  color:#de6164;
+  background:rgba(255, 255, 255, 0);
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim-3 2s infinite linear alternate-reverse;
+}
+@mixin effect-blue2($data-text) {
+  content:attr($data-text);
+  position:absolute;
+  left:1px;
+  text-shadow:1px 0 #2657eb;
+  top:0;
+  z-index: -1;
+  color:variables.$main-black;
+  background:#ffffff00;
+  overflow:hidden;
+  clip:rect(0,900px,0,0);
+  animation:noise-anim-4 3s infinite linear alternate-reverse;
+}

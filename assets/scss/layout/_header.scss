@@ -1,0 +1,265 @@
+@use "../common/variables";
+@use "../common/mixin";
+header {
+  @include mixin.sp {
+    width: 100%;
+    height: 7svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .gnav-shadow {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transition: 1s;
+      z-index: -100;
+      background-color: #00000000;
+    }
+    .gnav-shadow-open {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99998;
+      background-color: #ffffffb1;
+    }
+  }
+  .header-logo {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    @include mixin.sp {
+      margin: 0px;
+      position: fixed;
+      top: 23px;
+      left: 25px;
+      opacity: 1;
+      transition: 1s;
+      z-index: 10000;
+    }
+    p {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      @include mixin.sp {
+        font-size: 9vw;
+        letter-spacing: 1px;
+        &:after{
+          @include mixin.effect-red1(data-text3)
+        }
+        &:before{
+          @include mixin.effect-blue1(data-text3)
+        }
+      }
+    }
+    
+
+  }
+  .gnav-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    @include mixin.sp {
+      width: 50vw;
+      height: 100vh;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: variables.$sub-gray;
+      margin-bottom: 0px;
+      position: fixed;
+      top: 0;
+      right: -50vw;
+      z-index: 100001;
+      transition: 0.5s;
+      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    .gnav-list {
+      width: 680px;
+      display: flex;
+      justify-content: space-between;
+      @include mixin.sp {
+        width: 85%;
+        height: 100svh;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+      }
+      .gnav-item {
+        @include mixin.sp {
+          margin-left: 30px;
+          margin-bottom: 30px;
+          overflow: hidden;
+          .gnav-item-text {
+            display: flex;
+            flex-direction: column;
+            color: variables.$main-black;
+            transition: transform 1.3s;
+            transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); /* easeInExpo */
+            transform: translateY(40px);
+            &.fadeUp {
+              transform: translateY(0);
+            }
+            &.fadeDown {
+              transform: translateY(40px);
+            }
+            &::after {
+              font-size: 11px;
+              border-top: 1px solid variables.$main-black;
+              margin-top: 3px;
+            }
+          }
+          &:nth-child(1) .gnav-item-text::after{
+            content: "-TOP-";
+          }
+          &:nth-child(2) .gnav-item-text::after{
+            content: "-SERVICE-";
+          }
+          &:nth-child(3) .gnav-item-text::after{
+            content: "-WORKS-";
+          }
+          &:nth-child(4) .gnav-item-text::after{
+            content: "-ABOUT-";
+          }
+          &:nth-child(5) .gnav-item-text::after{
+            content: "-CONTACT-";
+          }
+        }
+        a {
+          font-size: 14px;
+          font-weight: 800;
+          @include mixin.sp {
+            font-size: 3.5vw;
+            font-weight: 900;
+          }
+        }
+        .gnav-text-gray {
+          &::after {
+            border-top: 2px solid;
+            border-image: linear-gradient(to right, #5681f8 0%, #7B37F2 50%, #DB5F9F 100%) 1;
+            
+          }
+        }
+        p {
+          font-size: 14px;
+          font-weight: 800;
+          @include mixin.strong-color;
+          border-bottom: 2px solid;
+          border-image: linear-gradient(to right, #5681f8 0%, #7B37F2 50%, #DB5F9F 100%) 1;
+          padding-bottom: 1px;
+          line-height: 1.3em;
+          @include mixin.sp {
+            font-size: 3.5vw;
+            font-weight: 900;
+            border-bottom: none;
+          }
+        }
+      }
+      .sns-list {
+        width: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        margin-left: 30px;
+        opacity: 0.5;
+        .sns-item {
+          width: 32px;
+          overflow: hidden;
+          .sns-icon {
+            width: 100%;
+            display: inline-block;
+            transition: transform 1.8s;
+            transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); /* easeInExpo */
+            transform: translateY(40px);
+            &.fadeUp {
+              transform: translateY(0);
+            }
+            &.fadeDown {
+              transform: translateY(40px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-white {
+  .logo p, .gnav-item a {
+    color: white;
+  }
+  @include mixin.sp {
+    .header-white {
+      .gnav-item {
+        overflow: hidden;
+        .gnav-item-text {
+          color: variables.$main-black;
+          transition: transform 1s;
+          transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); /* easeInExpo */
+          transform: translateY(40px);
+          &.fadeUp {
+            transform: translateY(0);
+          }
+          &.fadeDown {
+            transform: translateY(40px);
+          }
+        }
+      }
+      .sns-list {
+        width: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        margin-left: 30px;
+        .sns-item {
+          width: 32px;
+          overflow: hidden;
+          .sns-icon {
+            width: 100%;
+            display: inline-block;
+            transition: transform 1.8s;
+            transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); /* easeInExpo */
+            transform: translateY(40px);
+            &.fadeUp {
+              transform: translateY(0);
+            }
+            &.fadeDown {
+              transform: translateY(40px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pc-fixed {
+  position: fixed;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 9999999;
+}
+
+@include mixin.sp {
+  header {
+    .hide {
+      opacity: 0;
+      transition: 1s;
+    }
+    .gnav-open {
+      right: 0;
+      transition: 0.5s;
+      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    }
+  }
+}

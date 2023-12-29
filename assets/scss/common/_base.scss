@@ -1,0 +1,162 @@
+@use "mixin";
+@use "variables";
+
+.sp {
+  display: none;
+  @include mixin.sp {
+    display: block;
+  }
+}
+.pc {
+  display: block;
+  @include mixin.sp {
+    display: none!important;
+  }
+}
+
+
+
+* {
+  scroll-behavior: smooth;
+}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  animation: fadeIn 1s ease 0s 1 normal;
+  -webkit-animation: fadeIn 1s ease 0s 1 normal;
+  background-color: variables.$background-color;
+}
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:variables.$background-color;/* 色を変えたい場合はこちら */
+  z-index: 9999999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .4s ease;/* 変化させる時間はこちら */
+
+}
+body.fadeout::after {
+  opacity: 1;
+}
+
+.fade {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+/* bodyのafterにページ最前面の要素を作成 */
+
+.fade {
+  -webkit-animation: fadein 2s ease 2s 1 forwards;
+  animation: fadein 2s ease 2s 1 forwards;
+}
+ 
+@-webkit-keyframes fadein {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadein {
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.page-headbox {
+  display: flex;
+  justify-content: center;
+  background-color: variables.$sub-gray;
+  border-radius: 50px 50px 0px 0px;
+  transform: translateY(50px);
+  @include mixin.sp {
+    border-radius: 30px 30px 0px 0px;
+    transform: translateY(30px);
+    position: relative;
+    z-index: 1;
+  }
+  .page-headtextbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px 100px 0px;
+    @include mixin.sp {
+      padding: 30px 0px 50px 0px;
+    }
+    .page-headline {
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 10px;
+      margin-bottom: 6px;
+      @include mixin.sp {
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+        @include mixin.strong-color
+      }
+    }
+    .page-description {
+      font-size: 12px;
+      line-height: 1.5em;
+      @include mixin.sp {
+        letter-spacing: 0px;
+        @include mixin.strong-color
+      }
+    }
+  }
+}
+
+.content-box {
+  background-color: variables.$background-color;
+  border-radius: 50px 50px 0px 0px;
+  z-index: 99999;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  @include mixin.sp {
+    border-radius: 30px 30px 0px 0px;
+    z-index: 10;
+    padding: 30px 0px;
+    justify-content: flex-start;
+  }
+  .container{
+    width: 800px;
+    @include mixin.sp {
+      width: 88%;
+    }
+    .content-firsttext {
+      line-height: 30px;
+      font-weight: 500;
+      margin-bottom: 100px;
+      @include mixin.sp {
+        line-height: 25px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .container--contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+

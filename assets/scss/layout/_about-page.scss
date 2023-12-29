@@ -1,0 +1,85 @@
+@use "../common/variables";
+@use "../common/mixin";
+.content-box {
+  .page-about-box {
+    p {
+      line-height: 30px;
+      margin-bottom: 0px;
+      font-weight: 500;
+      @include mixin.sp {
+        line-height: 25px!important;
+      }
+    }
+  }
+  .page-about_img {
+    margin-bottom: 50px;
+  }
+  .page-about__headtext {
+    @include mixin.sp {
+      line-height: 20px;
+      margin-bottom: 0px;
+    }
+  }
+  .outline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .outline__headtext{
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: 10px;
+      margin-bottom: 50px;
+    }
+    .outline-box {
+      display: flex;
+      justify-content: center;
+      @include mixin.sp {
+        width: 100%;
+      }
+      .outline-box__title-list {
+        @include mixin.sp {
+          width: 100%;
+        }
+        .outline-box__title-item {
+          display: flex;
+          margin-right: 50px;
+          margin-bottom: 30px;
+          @include mixin.sp {
+            margin-bottom: 20px!important;
+          }
+          .outline-box__title {
+            font-weight: 500;
+            letter-spacing: 0px;
+            @include mixin.sp {
+              font-weight: 600;
+              letter-spacing: 2px;
+              line-height: 14px;
+            }
+            a {
+              text-decoration: underline;
+            }
+            @include mixin.sp {
+              span {
+                margin-top: 6px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+      .outline-box__body-list {
+        .outline-box__body-item {
+          display: flex;
+          margin-bottom: 30px;
+          .outline-box__body {
+            font-weight: 600;
+            letter-spacing: 5px;
+          }
+          .outline-box__body--last {
+            line-height: 14px;
+          }
+        }
+      }
+    }
+  }
+}

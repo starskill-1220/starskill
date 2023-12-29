@@ -1,0 +1,132 @@
+@use "../common/variables";
+@use "../common/mixin";
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+  background-color: variables.$background-color;
+  position: relative;
+  @include mixin.sp {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    position: relative; //z-indexを機能させるため
+    z-index: 1000;
+  }
+  .contact-box {
+    width: 800px;
+    padding: 40px;
+    background-color: variables.$sub-gray;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mixin.sp {
+      width: 95%;
+      border-radius: 30px;
+    }
+    .section-headtext {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+      &::after {
+        content: "お問い合わせ";
+        font-size: 12px;
+        line-height: 1.5em;
+        margin-top: 0px;
+        letter-spacing: 1px;
+      }
+    }
+    .contact-text {
+      line-height: 30px;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+      @include mixin.sp {
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color:variables.$background-color;
+  position: relative;
+  .footer-box {
+    width: 95%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: variables.$sub-gray;
+    border-radius: 50px 0 0 0 ;
+    position: relative;
+    @include mixin.sp {
+      height: 120px;
+      align-items: flex-end;
+      border-radius: 30px 0 0 0 ;
+    }
+    .footer-textbox {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      transform: translateX(-100px);
+      @include mixin.sp {
+        position: absolute;
+        bottom: 10px;
+        right: -10px;
+      }
+      .logo {
+        margin-bottom: 6px;
+        p {
+          font-size: 24px;
+        }
+      }
+      .copyright {
+        font-size: 12px;
+        @include mixin.sp {
+          font-size: 10px;
+          line-height: 1em;
+        }
+      }
+    }
+    .sns-list {
+      width: 90px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 40px;
+      opacity: 0.5;
+      @include mixin.sp {
+        width: 70px;
+        margin-left: 30px;
+        position: absolute;
+        top: 15px;
+        left: -10px;
+      }
+      .sns-item {
+        width: 35px;
+        @include mixin.sp {
+          width: 28px;
+        }
+        a {
+          width: 100%;
+        }
+      }
+    }
+    .top-scroll {
+      width: 80px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 100000;
+    }
+  }
+}
