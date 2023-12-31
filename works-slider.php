@@ -52,7 +52,7 @@
         <!-- 投稿が無い場合の処理 -->
       <?php endif; ?>
     </ul>
-  <p class="section-headtext strong-color">WORKS</p>
+  <h2 class="section-headtext strong-color">WORKS</h2>
   </div>
   <a class="btn" href="<?php echo home_url('/'); ?>/works">制作事例一覧へ</a>
 </section>

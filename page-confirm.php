@@ -2,7 +2,7 @@
 
 <div class="page-headbox">
   <div class="page-headtextbox">
-    <h1 class="page-headline">CONTACT</h1>
+    <p class="page-headline">CONTACT</p>
     <p class="page-description">お問い合わせ</p>
   </div>
 </div>
