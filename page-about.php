@@ -2,8 +2,8 @@
 
 <div class="page-headbox">
   <div class="page-headtextbox">
-    <h1 class="page-headline">ABOUT</h1>
-    <p class="page-description">STARSKILLについて</p>
+    <p class="page-headline">ABOUT</p>
+    <h1 class="page-description">STARSKILLについて</h1>
   </div>
 </div>
 

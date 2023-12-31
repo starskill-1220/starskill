@@ -1,32 +1,31 @@
 
 <footer class="">
-      <div class="footer-box">
-        <ul class="sns-list">
-          <li class="sns-item">
-            <a href="#">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="">
-            </a>
-          </li>
-          <li class="sns-item">
-            <a href="#">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="">
-            </a>
-          </li>
-        </ul>
-        <div class="footer-textbox">
-          <a class="logo" href="<?php echo home_url('/'); ?>">
-            <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo_white.png" alt=""> -->
-            <p>STARSKILL</p>
-          </a>
-          <p class="copyright">© STARSKILL All Rights Reserved.</p>
-        </div>
-        <a href="#"><img class="top-scroll" src="<?php echo get_template_directory_uri(); ?>/img/top-scroll.png" alt=""></a>
-        
-      </div>
-      <?php wp_footer(); ?>
-    </footer>
+  <div class="footer-box">
+    <ul class="sns-list">
+      <li class="sns-item">
+        <a href="#">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="Twitterリンク">
+        </a>
+      </li>
+      <li class="sns-item">
+        <a href="#">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="facebookリンク">
+        </a>
+      </li>
+    </ul>
+    <div class="footer-textbox">
+      <a class="logo" href="<?php echo home_url('/'); ?>">
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo_white.png" alt=""> -->
+        <p>STARSKILL</p>
+      </a>
+      <p class="copyright">© STARSKILL All Rights Reserved.</p>
+    </div>
+    <a href="#"><img class="top-scroll" src="<?php echo get_template_directory_uri(); ?>/img/top-scroll.png" alt=""></a>
+  </div>
+  <?php wp_footer(); ?>
+</footer>
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"> </script>
     <script src="<?php echo get_template_directory_uri() ?>/assets/js/index.js" type="text/javaScript" charset="utf-8"></script>
     <script src="<?php echo get_template_directory_uri() ?>/assets/js/rellax.min.js"></script>

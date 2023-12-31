@@ -116,10 +116,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
     .service-price {
       font-size: 34px;
       font-weight: bold;
       margin-bottom: 24px;
+      @include mixin.sp {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+      }
     }
     .service-price--small {
       font-size: 14px;
@@ -127,6 +133,14 @@
     .service-price--caption {
       width: 100%;
       font-size: 10px;
+      @include mixin.sp {
+        font-weight: bold;
+        margin-top: 11px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+      }
+  
     }
   }
   .service-list-box {

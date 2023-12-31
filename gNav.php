@@ -1,22 +1,21 @@
 <div class="menu-trigger-box">
-    <p class="menu-trigger sp" href="#">
-      <span></span>
-      <span></span>
-      <span></span>
-    </p>
-  </div>
+  <p class="menu-trigger sp" href="#">
+    <span></span>
+    <span></span>
+    <span></span>
+  </p>
+</div>
 <div class="gnav-shadow"></div>
 <nav class="gnav-box">
   <ul class="gnav-list">
     <!-- 現在のURLを取得する -->
-    <?php $current_page = (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];?>
+    <?php include("current_page.php");?>
     <li class="gnav-item">
       <?php if( $current_page == home_url('/')) : ?>
         <p class="gnav-item-text gnav-text-gray">トップへ</p>
       <?php else : ?>
         <a class="gnav-item-text" href="<?php echo home_url('/'); ?>/" class="gnav-text">トップへ</a>
       <?php endif ; ?>
-        
     </li>
     <li class="gnav-item">
       <?php if( $current_page == home_url('/'). "service/") : ?>

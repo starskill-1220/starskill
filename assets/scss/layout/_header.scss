@@ -40,7 +40,7 @@ header {
       transition: 1s;
       z-index: 10000;
     }
-    p {
+    h1, p {
       font-size: 30px;
       font-weight: 800;
       letter-spacing: 3px;
@@ -191,7 +191,7 @@ header {
 }
 
 .header-white {
-  .logo p, .gnav-item a {
+  .logo h1, .logo p, .gnav-item a {
     color: white;
   }
   @include mixin.sp {
