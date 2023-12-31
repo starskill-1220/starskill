@@ -1,8 +1,4 @@
-<?php if(get_field("ヘッダーの色") == "white"): ?>
-  <?php get_header("white"); ?>
-<?php elseif(get_field("ヘッダーの色")== "black"): ?>
-  <?php get_header(""); ?>
-<?php endif?>
+<?php get_header(""); ?>
 <div class="page-works-content-fv">
   <img class="page-works-content-fv__background rellax" data-rellax-speed="2"  src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
   <?php if(get_field("スクロールバーの色") == "white"): ?>
