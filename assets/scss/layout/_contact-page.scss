@@ -91,7 +91,7 @@
 }
 @include mixin.sp {
   .btn {
-    width: 80%;
+    width: clamp(200px,100%,300px);
     padding-right: 0px;
     padding-left: 0px;
     text-align: center;

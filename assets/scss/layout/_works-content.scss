@@ -63,7 +63,7 @@
       padding: 5px 10px 7px 20px;
       margin-bottom: 10px;
       @include mixin.sp {
-        font-size: 3vw;
+        font-size: clamp(12px,3vw, 18px);
         font-weight: 900;
         line-height: 1.7em;
         padding: 0px 10px 5px 10px;
@@ -94,7 +94,7 @@
     .content-box {
       .container {
         @include mixin.sp {
-          width: 100%;
+          width: clamp(330px, 88%, 620px);
         }
         .page-works-content__headtext-box {
           .works-content-pageBtn {

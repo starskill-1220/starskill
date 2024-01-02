@@ -140,7 +140,7 @@ body.fadeout::after {
   .container{
     width: 800px;
     @include mixin.sp {
-      width: 88%;
+      width: clamp(330px, 88%, 620px);
     }
     .content-firsttext {
       line-height: 30px;

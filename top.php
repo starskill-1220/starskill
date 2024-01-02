@@ -21,7 +21,7 @@
       <div class="about-palala-img sp rellax" data-rellax-speed="0.5" >
         <img class="rellax" data-rellax-speed="0.5"  src="<?php echo get_template_directory_uri(); ?>/img/section1-img1.png" alt="STARSKILL">
       </div>
-      <div class="fv-textbox--sp__background rellax" data-rellax-speed="0.5"></div>
+      <!-- <div class="fv-textbox--sp__background rellax" data-rellax-speed="0.5"></div> -->
     </div>
   <div class="about-box">
     <div class="about-palala-img pc">

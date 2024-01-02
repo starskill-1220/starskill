@@ -14,7 +14,7 @@
       justify-content: flex-start;
       position: relative;
       overflow-x: hidden;
-      transform: translateY(-70px);
+      transform: translateY(-64px);
       z-index: -3;
     }
     .fv-textbox {
@@ -46,15 +46,16 @@
     .fv-img {
       position: relative;
       width: 100vw;
-      height: 100svh;
+      height: 101svh;
       margin-bottom: 0px;
-      transform: translateY(-61px);
+      transform: translateY(-64px);
       z-index: -1111;
       top: 0;
       @include mixin.sp {
         order: 1;
         display: flex;
         justify-content: center;
+        transform: translateY(0);
         .fv-mono-img {
           width: 100vw;
           height: 105svh;
@@ -108,21 +109,24 @@
         flex-direction: column;
         align-items: flex-end;
         .fv-text1, .fv-text2 {
-          font-size: 15vw;
+          font-size: clamp(40px,15vw,90px);
           font-weight: 600;
           letter-spacing: 0px;
-          line-height: 60px;
+          line-height: 0.95em;
           position: relative;
         }
         .fv-text1 {
           transform: translateY(8px);
         }
         .fv-text3 {
-          font-size: 3vw;
+          font-size: clamp(12px, 3vw, 18px);
           font-weight: 700;
           margin-top: 0;
           margin-bottom: 3px;
-          margin-right: 5px;
+          margin-right: 2px;
+          .strong-color {
+            font-size: clamp(12px, 3vw, 18px);
+          }
         }
         .fv-text1:after{
           @include mixin.effect-red1(data-text)
@@ -138,7 +142,7 @@
         }
       }
       .about-palala-img {
-        width: 43vw;
+        width: clamp(160px, 44vw, 450px);
         height: 35svh;
         margin-right: 0px;
         background-color: variables.$background-color;
@@ -216,7 +220,7 @@
         font-weight: 400;
         font-style: normal;
         @include mixin.sp {
-          font-size: 10.5vw;
+          font-size: clamp( 40px, 10.5vw,45px );
           margin-bottom: 20px;
           display: inline-block;
           padding-top: 5px;
@@ -228,6 +232,7 @@
         letter-spacing: 1px;
         margin-bottom: 30px;
         @include mixin.sp {
+          width: clamp( 335px, 100%, 620px);
           font-size: 14px;
           line-height: 24px;
           letter-spacing: 1px;
@@ -251,8 +256,10 @@
     border-radius: 0px ;
     transform: translateY(0px);
     padding-bottom: 50px;
+    width: clamp( 335px, 100%, 620px);
+    margin: 0 auto;
     .btn {
-      width: 80%;
+      width: clamp(200px,80%,300px);
     }
   }
   .section-headbox {
@@ -313,7 +320,8 @@
         flex-direction: column;
         align-items: center;
         @include mixin.sp {
-          width: 100%;
+          width: clamp( 306px, 100%, 450px );
+          margin: 0 auto;
         }
         .service-item-number {
           font-size: 70px;
@@ -333,7 +341,7 @@
           font-weight: bold;
           margin-bottom: 20px;
           @include mixin.sp {
-            font-size: 4.5vw;
+            font-size: clamp( 17px, 4.5vw, 20px );
           }
         }
         .service-item-img {
@@ -388,7 +396,11 @@
         }
         .service-item-box {
           width: 100%;
+          @include mixin.sp {
+            width: clamp( 306px, 100%, 560px );
+          }
         }
+
       }
     }
   }
