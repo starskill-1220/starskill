@@ -9,6 +9,10 @@ p, a, h1, h2, h3, h4, span , label, .btn {
   line-height: 1em;
   color: variables.$main-black;
 }
+.imp-text {
+  color: variables.$imp-red;
+  font-weight: bold;
+}
 .strong-color {
   @include mixin.strong-color
 }

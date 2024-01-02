@@ -11,7 +11,8 @@
   <div class="container container--contact">
     <p class="page-contact__headtext">
       お仕事のご依頼・ご相談、料金のお見積もりなど、お気軽にお問い合わせください。<br>
-      お問い合せ内容の確認後、担当者よりご連絡させていただきます。
+      お問い合せ内容の確認後、担当者よりご連絡させていただきます。<br><br>
+      <span class="imp-text">※全て必須項目です。</span>
     </p>
     <?php the_content(); ?>
 
