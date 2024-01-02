@@ -248,7 +248,7 @@
         align-items: center;
         margin-bottom: 30px;
         @include mixin.sp {
-          justify-content: space-between;
+          justify-content: flex-start;
           margin-bottom: 40px;
         }
         .service__workflow-number {
@@ -266,7 +266,7 @@
             font-size: 24px;
             width: 55px;
             height: 55px;
-            margin-right: 10px;
+            margin-right: 14px;
           }
         }
         .service__workflow-textbox {
@@ -274,7 +274,7 @@
           display: flex;
           flex-direction: column;
           @include mixin.sp {
-            width: 80%;
+            width: 88%;
           }
           .service__workflow-title {
             font-size: 20px;
@@ -283,7 +283,7 @@
             padding-bottom: 10px;
             border-bottom: 1px dotted variables.$main-black;
             @include mixin.sp {
-              font-size: 4vw;
+              font-size: clamp( 13px, 4vw, 18px);
               margin-bottom: 2px;
               padding-bottom: 7px;
             }

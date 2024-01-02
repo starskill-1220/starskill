@@ -43,6 +43,7 @@ img {
   padding: 24px 100px;
   display: inline-block;
   @include mixin.sp {
+    width: clamp(200px,100%,300px);
     margin: 0 auto;
     letter-spacing: 1px;
     font-weight: bold;
@@ -71,8 +72,8 @@ img {
   display: none;
   @include mixin.sp {
     display: block;
-    bottom: 16svh!important;
-    right: 6vw;
+    bottom: clamp(100px,17svh,215px) !important;
+    right: clamp(10px, 5vw,30px);
   }
 }
 

@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     @include mixin.sp {
-      width: 90%;
+      width: clamp(330px, 88%, 620px);
       justify-content: center;
     }
     .page-works-item {
@@ -49,7 +49,7 @@
             line-height: 1em;
             margin-bottom: 10px;
             @include mixin.sp {
-              font-size: 3.5vw;
+              font-size: clamp(13px,3.5vw,20px);
               margin-right: 10px;
             }
           }
@@ -59,7 +59,7 @@
             font-weight: 600;
             line-height: 1em;
             @include mixin.sp {
-              font-size: 2vw;
+              font-size: clamp(12px,2vw,14px);
             }
           }
         }
