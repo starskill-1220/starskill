@@ -38,18 +38,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <?php if( $current_page.the_field("description") == true) : ?>
       <meta name="description" content="<?php echo the_field("description") ?>"/>
     <?php else :?>
-      <meta name="description" content="webサイト制作のことならSTARSKILLへお任せください"/>
+      <meta name="description" content="ホームページ制作は「STARSKILL」へ"/>
     <?php endif ?>
 
     <!--OGPタグ/twitterカード-->
     <meta property="og:url" content="<?php echo home_url('/'); ?>" />
-    <meta property="og:title" content="STARSKILL.jp" />
+    <meta property="og:title" content="STARSKILL" />
     <meta property="og:type" content="website">
-    <meta property="og:description" content="LP・Webデザイン事務所「STARSKILL.jp」のWebサイト" />
+    <meta property="og:description" content="こんなサイト作ります。ホームページ制作は「STARSKILL」へ" />
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/twitter-card.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="" />
-    <meta property="og:site_name" content="STARSKILL.jp" />
+    <meta property="og:site_name" content="STARSKILL" />
     <meta property="og:locale" content="ja_JP" />
     <meta property="fb:app_id" content="appIDを入力" />
     <!--サイトアイコンの指定-->
