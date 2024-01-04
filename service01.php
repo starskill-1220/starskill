@@ -72,8 +72,32 @@
   </div>
   <div class="service-other-box">
     <p class="service-subtext">[その他対応可能]</p>
-    <img src="<?php echo get_template_directory_uri(); ?>/img/service01-other.png" alt="" class="service-other-text-img pc">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/service01-other--sp.png" alt="" class="service-other-text-img sp">
+    <ul class="service__other-list">
+      <li class="service__other-item">
+        <p class="service__other-item--title">プライバシーポリシーページの設置</p>
+        <p class="service__other-item--text">設置可能</p>
+      </li>
+      <li class="service__other-item">
+        <p class="service__other-item--title">デザイン修正回数</p>
+        <p class="service__other-item--text"><span class="service__other-item--text-before">納品まで</span>無制限</p>
+      </li>
+      <li class="service__other-item">
+        <p class="service__other-item--title">広告タグの設置</p>
+        <p class="service__other-item--text">設置可能</p>
+      </li>
+      <li class="service__other-item">
+        <p class="service__other-item--title">お問い合わせフォーム設置</p>
+        <p class="service__other-item--text">対応可能<span class="service__other-item--text-after">※1</span></p>
+      </li>
+      <li class="service__other-item">
+        <p class="service__other-item--title">サーバー契約の代行</p>
+        <p class="service__other-item--text">対応可能<span class="service__other-item--text-after">※2</span></p>
+      </li>
+      <li class="service__other-item">
+        <p class="service__other-item--title">ドメイン取得代行</p>
+        <p class="service__other-item--text">対応可能<span class="service__other-item--text-after">※3</span></p>
+      </li>
+    </ul>
     <p class="service-other-description">※1　納品後の修正も大きな変更(セクション自体を丸々デザインしなおし等)でなければ一部変更の希望も臨機応変に対応させていただきます。(大きな変更の場合は、別途料金が発生する可能性があります)</p>
     <p class="service-other-description">※2　サーバー契約代行はエックスサーバーの有料プランにてお客様ご名義で契約作業を代行させていただきます。発生する費用は制作費とは別にご請求となります。</p>
     <p class="service-other-description">※3　ドメイン取得代行はエックスドメインにてお客様ご名義で契約作業を代行させていただきます。発生する費用は制作費とは別にご請求となります。</p>

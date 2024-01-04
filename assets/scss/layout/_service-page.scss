@@ -110,6 +110,73 @@
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 20px;
+    @include mixin.sp {
+      margin-bottom: 20px;
+    }
+  }
+  .service__other-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    @include mixin.sp {
+      flex-direction: column;
+    }
+    .service__other-item {
+      width: 49%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 18px 10px 18px;
+      border-bottom: 2px variables.$main-black solid ;
+      &:nth-child(1),&:nth-child(2){
+        border-top: 2px variables.$main-black solid ;
+      }
+      @include mixin.sp {
+        width: 100%;
+        padding: 10px 20px 10px 10px;
+        border-bottom: 2.5px variables.$main-black solid ;
+        &:nth-child(2) {
+          border-top: none;
+        }
+      }
+      .service__other-item--title {
+        width: 70%;
+        font-size: clamp(12px, 1vw,13px);
+        font-weight: bold;
+      }
+      .service__other-item--text {
+        width: clamp(90px, 30%,105px);
+        font-size: 25px;
+        font-weight: bold;
+        text-align: right;
+        position: relative;
+        @include mixin.sp {
+          font-size: clamp(17px,5.2vw,23px);
+        }
+        .service__other-item--text-before {
+          font-size: 10px;
+          font-weight: bold;
+          position: absolute;
+          top: 10px;
+          left: -30px;
+          @include mixin.sp {
+            transform: scale(0.9);
+            top: clamp(5px,1.5vw,8.5px);
+            left: clamp(-23px,-3vw,-25px);
+          }
+        }
+        .service__other-item--text-after {
+          font-size: 10px;
+          transform: scale(0.8);
+          font-weight: bold;
+          position: absolute;
+          bottom: 0px;
+          right: -20px;
+        }
+      }
+    }
   }
   .service-price-box {
     width: 100%;
