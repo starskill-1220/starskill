@@ -9,7 +9,12 @@
           <li class="works-item">
             <a href="<?php the_permalink(); ?>">
               <img class="works-img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" class="slider-img">
-              <div class="works-item-textbox">
+              <div class="
+              works-item-textbox
+              <?php if(get_field("サンプル制作物") == "サンプル制作物") : ?>
+                works-item__sample-badge
+              <?php endif ?>
+              ">
                 <?php if(get_field("発注元") == "自社") : ?>
                   <p class="works-name"><?php echo get_the_title(); ?></p>
                 <?php else : ?>
@@ -36,7 +41,12 @@
           <li class="works-item">
             <a href="<?php the_permalink(); ?>">
               <img class="works-img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" class="slider-img">
-              <div class="works-item-textbox">
+              <div class="
+              works-item-textbox
+              <?php if(get_field("サンプル制作物") == "サンプル制作物") : ?>
+                works-item__sample-badge
+              <?php endif ?>
+              ">
                 <?php if(get_field("発注元") == "自社") : ?>
                   <p class="works-name"><?php echo get_the_title(); ?></p>
                 <?php else : ?>

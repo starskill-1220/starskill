@@ -20,7 +20,12 @@
       <li class="page-works-item">
         <a href="<?php the_permalink(); ?>">
           <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="制作実績画像" class="page-works-img">
-          <div class="works-item-textbox">
+          <div class="
+          works-item-textbox
+          <?php if(get_field("サンプル制作物") == "サンプル制作物") : ?>
+            works-item__sample-badge
+          <?php endif ?>
+          ">
             <?php if(get_field("発注元") == "自社") : ?>
               <p class="works-name"><?php echo get_the_title(); ?></p>
             <?php else : ?>

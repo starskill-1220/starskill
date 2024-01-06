@@ -82,6 +82,17 @@
             left: -100%;
             transform: scale(1.1);
           }
+          .works-item__sample-badge::after {
+            content: "サンプル制作物";
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 50px;
+            background-color: variables.$badge-green ;
+            color: variables.$text-white;
+            position: absolute;
+            top: -30px;
+            left: 10px;
+          }
           .works-item-textbox {
             width: auto;
             max-width: 280px;
@@ -150,6 +161,17 @@
                 position: relative;
                 left: -100%;
                 transform: scale(1.1);
+            }
+            .works-item__sample-badge::after {
+              content: "サンプル制作物";
+              font-size: 12px;
+              padding: 4px 10px;
+              border-radius: 50px;
+              background-color: variables.$badge-green ;
+              color: variables.$text-white;
+              position: absolute;
+              top: -30px;
+              left: 10px;
             }
             .works-item-textbox {
               width: auto;
