@@ -29,16 +29,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/03f4bb96ca.js" crossorigin="anonymous"></script>
 
-    <?php $current_page = (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];?>
+    <?php include("current_page.php");?>
     <?php if($current_page == home_url('/')) : ?>
       <title>STARSKILL</title>
     <?php else :?>
       <title><?php the_title(); ?> | STARSKILL</title>
-    <?php endif ?>
-    <?php if( $current_page.the_field("description") == true) : ?>
+    <?php endif ;?>
+
+    <?php if( get_field("description") == true) : ?>
       <meta name="description" content="<?php echo the_field("description") ?>"/>
     <?php else :?>
-      <meta name="description" content="ホームページ制作は「STARSKILL」へ"/>
+      <meta name="description" content="これはテストです"/>
     <?php endif ?>
 
     <!--OGPタグ/twitterカード-->
@@ -69,8 +70,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       async: true
     },
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
+    })(document);
+  </script>
 
     <?php wp_head(); ?>
-  </head>
+</head>
