@@ -1,5 +1,37 @@
 <?php
 
+// head自動出力を全てオフにする
+
+/* DNSプリフェッチ設定の削除 */
+add_filter( 'emoji_svg_url', '__return_false' );
+ 
+/* 絵文字削除 */
+remove_action( 'wp_head',             'print_emoji_detection_script', 7 );
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'wp_print_styles',     'print_emoji_styles' );
+remove_action( 'admin_print_styles',  'print_emoji_styles' );
+
+/* WP5.x.xのブロックエディタ用スタイルの排除 */
+wp_deregister_style( 'wp-block-library' );
+wp_deregister_style( 'wp-block-library-theme' );
+
+/* wp-json削除 */
+remove_action('wp_head','rest_output_link_wp_head');
+remove_action('wp_head','wp_oembed_add_discovery_links');
+
+/* 外部投稿ツール設定削除 */
+remove_action( 'wp_head', 'wlwmanifest_link' );
+remove_action( 'wp_head', 'rsd_link' );
+
+/* WPのバージョン削除 */
+remove_action('wp_head', 'wp_generator');
+
+// カテゴリーとタグのmeta descriptionからpタグを除去
+remove_filter('term_description','wpautop');
+
+// ↑ head自動出力を全てオフにする　↑
+
+
 // 404ページ表示
 add_action( 'template_redirect', 'is404_redirect' );
 function is404_redirect() {
