@@ -7,7 +7,7 @@
   background-color: variables.$background-color;
   position: relative;
   @include mixin.sp {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 100px;
     position: relative; //z-indexを機能させるため
@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: center;
     @include mixin.sp {
-      width: clamp(335px,100%,600px);
+      width: clamp(335px, 90%, 600px);
       border-radius: 30px;
     }
     .section-headtext {
