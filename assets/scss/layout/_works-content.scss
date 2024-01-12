@@ -23,6 +23,17 @@
       left: 80%;
     }
   }
+  .works-item__sample-badge::after {
+      content: "サンプル制作物";
+      font-size: 14px;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 50px;
+      background-color: variables.$badge-green ;
+      color: variables.$text-white;
+      position: absolute;
+      top: -30px;
+    }
   .fv-textbox {
     display: flex;
     flex-direction: column;
@@ -33,6 +44,7 @@
     right: 10vw;
     transform: translateY(-50%);
     z-index: 0;
+    
     @include mixin.sp {
       width: 100%;
       position: absolute;
@@ -45,7 +57,7 @@
       font-weight: bold;
       color:variables.$text-white;
       letter-spacing: 10px;
-      padding: 10px 30px 10px 50px;
+      padding: 10px 0px 10px 50px;
       margin-bottom: 30px;
       @include mixin.sp {
         font-size: 7vw;
