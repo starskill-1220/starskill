@@ -6,7 +6,12 @@
   <?php elseif(get_field("スクロールバーの色") == "black"): ?>
     <div class="scrolldown scrolldown--black"></div>
   <?php endif ?>
-  <div class="fv-textbox rellax" data-rellax-speed="2">
+  <div class="fv-textbox
+              <?php if(get_field("サンプル制作物") == "サンプル制作物") : ?>
+                works-item__sample-badge
+              <?php endif ?>
+              rellax"
+  data-rellax-speed="2">
     <?php if(get_field("発注元") == "自社") : ?>
       <h1 class="fv-textbox__title"><?php the_title(); ?></h1>
     <?php else : ?>
