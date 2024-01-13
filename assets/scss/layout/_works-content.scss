@@ -31,6 +31,7 @@
       border-radius: 50px;
       background-color: variables.$badge-green ;
       color: variables.$text-white;
+      font-family: 'Noto Sans JP';
       position: absolute;
       top: -30px;
     }
@@ -205,10 +206,11 @@
               font-weight: bold;
               text-align: center;
               margin-bottom: 10px;
+              font-family: 'Noto Sans JP';
               @include mixin.sp {
                 width: 49%;
                 font-size: 14px;
-                &:nth-child(5), &:nth-child(6) {
+                &:nth-child(9), &:nth-child(10) {
                   margin-bottom: 0;
                 }
               }
