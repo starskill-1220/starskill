@@ -29,7 +29,7 @@
     </div>
     <div class="about-textbox">
       <p class="about-handtext">Provide creative value</p>
-      <p class="about-text">STARSKILLは、スタートアップの企業様に全力をもって寄り添うコンテンツ制作を信念に掲げております。貴社の明るい未来へつながる道を探求することに尽力し、全行程に専門性・根拠を持った対策に務めて参ります。</p>
+      <p class="about-text">STARSKILLは、企業様に全力をもって寄り添うWebコンテンツ制作を信念に掲げております。貴社の明るい未来へつながる道を探求することに尽力し、全行程に専門性・根拠を持った対策に務めて参ります。</p>
       <!-- <a href="<?php echo home_url('/'); ?>/about" class="btn">ABOUT</a> -->
     </div>
   </div>

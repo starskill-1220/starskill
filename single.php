@@ -48,33 +48,58 @@
         <p class="works-content__headtext-sub">対応させていただいたこと</p>
         <ul class="works-content__info-other-list">
           <li class="works-content__info-other-item 
-          <?php if(in_array(0, get_field("対応させていただいたこと"))) :?>
-            execution
-          <?php endif ?>
-          ">サーバー契約代行</li>
+            <?php if(in_array("企画構成", get_field("対応させていただいたこと"))) :?>
+              execution
+            <?php endif ?>
+            ">企画構成
+          </li>
+          <li class="works-content__info-other-item 
+            <?php if(in_array("顧客競合分析", get_field("対応させていただいたこと"))) :?>
+              execution
+            <?php endif ?>
+            ">顧客競合分析
+          </li>
+          <li class="works-content__info-other-item 
+            <?php if(in_array("デザイン", get_field("対応させていただいたこと"))) :?>
+              execution
+            <?php endif ?>
+            ">オリジナルデザイン
+          </li>
+          <li class="works-content__info-other-item 
+            <?php if(in_array("コーディング", get_field("対応させていただいたこと"))) :?>
+              execution
+            <?php endif ?>
+            ">コーディング
+          </li>
+          <li class="works-content__info-other-item 
+            <?php if(in_array("サーバー契約代行", get_field("対応させていただいたこと"))) :?>
+              execution
+            <?php endif ?>
+            ">サーバー契約代行
+          </li>
 
           <li class="works-content__info-other-item
-          <?php if(in_array(1, get_field("対応させていただいたこと"))) :?>
+          <?php if(in_array("ドメイン取得代行", get_field("対応させていただいたこと"))) :?>
             execution
           <?php endif ?>">ドメイン取得代行</li>
 
           <li class="works-content__info-other-item
-          <?php if(in_array(2, get_field("対応させていただいたこと"))) :?>
+          <?php if(in_array("素材準備(撮影込み)", get_field("対応させていただいたこと"))) :?>
             execution
-          <?php endif ?>">素材準備・撮影</li>
+          <?php endif ?>">素材準備(撮影込み)</li>
 
           <li class="works-content__info-other-item
-          <?php if(in_array(3, get_field("対応させていただいたこと"))) :?>
+          <?php if(in_array("WordPress構築", get_field("対応させていただいたこと"))) :?>
             execution
           <?php endif ?>">WordPress構築</li>
 
           <li class="works-content__info-other-item
-          <?php if(in_array(4, get_field("対応させていただいたこと"))) :?>
+          <?php if(in_array("問い合わせフォーム設置", get_field("対応させていただいたこと"))) :?>
             execution
           <?php endif ?>">問い合わせフォーム設置</li>
 
           <li class="works-content__info-other-item
-          <?php if(in_array(5, get_field("対応させていただいたこと"))) :?>
+          <?php if(in_array("運用保守契約", get_field("対応させていただいたこと"))) :?>
             execution
           <?php endif ?>">運用保守契約</li>
         </ul>
