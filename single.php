@@ -26,13 +26,65 @@
   <div class="content-box">
     <div class="container">
       <article class="page-works-content__headtext-box">
+        <p class="page-works-content__headtext-title">INFOMATION</p>
+        <ul class="works-content__info-list">
+          <li class="works-content__info-item">
+            <p class="works-content__info-item--title">クライアント名</p>
+            <p class="works-content__info-item--body"><?php echo the_field("クライアント名") ?> </p>
+          </li>
+          <li class="works-content__info-item">
+            <p class="works-content__info-item--title">サイトカテゴリ</p>
+            <p class="works-content__info-item--body"><?php echo the_field("ページの種類") ?></p>
+          </li>
+          <li class="works-content__info-item">
+            <p class="works-content__info-item--title">エリア</p>
+            <p class="works-content__info-item--body"><?php echo the_field("エリア") ?></p>
+          </li>
+          <li class="works-content__info-item">
+            <p class="works-content__info-item--title">制作期間</p>
+            <p class="works-content__info-item--body"><?php echo the_field("制作期間") ?>日間</p>
+          </li>
+        </ul>
+        <p class="works-content__headtext-sub">対応させていただいたこと</p>
+        <ul class="works-content__info-other-list">
+          <li class="works-content__info-other-item 
+          <?php if(in_array(0, get_field("対応させていただいたこと"))) :?>
+            execution
+          <?php endif ?>
+          ">サーバー契約代行</li>
+
+          <li class="works-content__info-other-item
+          <?php if(in_array(1, get_field("対応させていただいたこと"))) :?>
+            execution
+          <?php endif ?>">ドメイン取得代行</li>
+
+          <li class="works-content__info-other-item
+          <?php if(in_array(2, get_field("対応させていただいたこと"))) :?>
+            execution
+          <?php endif ?>">素材準備・撮影</li>
+
+          <li class="works-content__info-other-item
+          <?php if(in_array(3, get_field("対応させていただいたこと"))) :?>
+            execution
+          <?php endif ?>">WordPress構築</li>
+
+          <li class="works-content__info-other-item
+          <?php if(in_array(4, get_field("対応させていただいたこと"))) :?>
+            execution
+          <?php endif ?>">問い合わせフォーム設置</li>
+
+          <li class="works-content__info-other-item
+          <?php if(in_array(5, get_field("対応させていただいたこと"))) :?>
+            execution
+          <?php endif ?>">運用保守契約</li>
+        </ul>
+        <p class="page-works-content__headtext-title">COMMENT</p>
+        <?php the_content(); ?>
         <?php if(get_field("制作物リンク先") == true && get_field("発注元") == "自社") : ?>
           <a class="btn works-content-pageBtn" href="<?php echo the_field("制作物リンク先") ?>"><?php the_title() ?> のページへ</a>
         <?php elseif(get_field("制作物リンク先") == true && get_field("発注元") == "他社") : ?>
           <a class="btn works-content-pageBtn" href="<?php echo the_field("制作物リンク先") ?>"><?php the_title() ?> 様のページへ</a>
         <?php endif ?>
-        <p class="page-works-content__headtext-title">COMMENT</p>
-        <?php the_content(); ?>
       </article>
     </div>
   </div>

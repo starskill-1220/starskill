@@ -6,7 +6,8 @@
     STARSKILLでは『信用・信頼』と『スムーズな導線』に重きをおき、一期一会の来訪をしっかりとキャッチできるWebサイトを制作します。</p>
   <div class="service-price-box">
     <p class="service-subtext">[Webサイト制作費用目安]</p>
-    <p class="service-price">89,000
+    <p class="service-price">
+      145,000
       <span class="service-price--small">円〜</span>
     </p>
   </div>
@@ -16,27 +17,27 @@
       <li class="service-slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/service02-corpo.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">コーポレートサイト</p>
-        <p class="service-slider-item-price">89,000円(税込)</p>
+        <p class="service-slider-item-price">178,000円(税込)〜</p>
       </li>
       <li class="service-slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/service02-recruit.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">リクルートサイト</p>
-        <p class="service-slider-item-price">89,000円(税込)</p>
+        <p class="service-slider-item-price">178,000円(税込)〜</p>
       </li>
       <li class="service-slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/service02-artist.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">アーティストサイト</p>
-        <p class="service-slider-item-price">89,000円(税込)</p>
+        <p class="service-slider-item-price">148,000円(税込)〜</p>
       </li>
       <li class="service-slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/service02-portfolio.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">ポートフォリオサイト</p>
-        <p class="service-slider-item-price">89,000円(税込)</p>
+        <p class="service-slider-item-price">145,000円(税込)〜</p>
       </li>
       <li class="service-slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/service02-blog.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">ブログサイト</p>
-        <p class="service-slider-item-price">89,000円(税込)</p>
+        <p class="service-slider-item-price">145,000円(税込)〜</p>
       </li>
     </ul>
   </div>
@@ -46,22 +47,22 @@
       <li class="service-slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider01.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">企画構成・ディレクション</p>
-        <p class="service-slider-item-price">9,000円〜</p>
+        <p class="service-slider-item-price">15,000円〜</p>
       </li>
-      <li class="service-slider-item">
+      <!-- <li class="service-slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider02.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">プロトタイプ作成</p>
         <p class="service-slider-item-price">10,000円〜</p>
-      </li>
+      </li> -->
       <li class="service-slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider03.png" alt="" class="service-slider-item-img design-img">
         <p class="service-slider-item-title">オリジナルデザイン</p>
-        <p class="service-slider-item-price">30,000円〜</p>
+        <p class="service-slider-item-price">60,000円〜</p>
       </li>
       <li class="service-slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/service02-wordpress.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">コーディング(WP構築)</p>
-        <p class="service-slider-item-price">40,000円〜</p>
+        <p class="service-slider-item-price">70,000円〜</p>
       </li>
       <!-- <li class="service-slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/service02-slider06.png" alt="" class="service-slider-item-img">

@@ -125,17 +125,14 @@
           .page-works-content__headtext-title {
             font-size: 30px;
             font-weight: bold;
-            letter-spacing: 10px;
             margin-bottom: 20px;
             @include mixin.sp {
               font-weight: 600;
-              letter-spacing: 5px;
               padding: 10px 0px;
               margin-bottom: 10px;
               @include mixin.strong-color
             }
           }
-          
           p, .page-works-content__headtext-body {
             font-weight: 500;
             line-height: 30px;
@@ -154,6 +151,72 @@
             }
             img {
               box-shadow: 0px 0px 10px #00000046;
+            }
+          }
+          .works-content__info-list {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            .works-content__info-item {
+              display: flex;
+              align-items: center;
+              margin-bottom: 10px;
+              
+              .works-content__info-item--title {
+                width: 180px;
+                padding: 10px 0px;
+                color: variables.$main-black;
+                background-color: variables.$sub-gray;
+                border-radius: 100px;
+                text-align: center;
+                font-weight: bold;
+                @include mixin.sp {
+                  margin-bottom: 0;
+                }
+              }
+              .works-content__info-item--body {
+                margin-bottom: 0;
+                margin-left: 30px;
+                @include mixin.sp {
+                  padding-top: 0;
+                }
+              }
+            }
+          }
+          .works-content__headtext-sub {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 0;
+          }
+          .works-content__info-other-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            @include mixin.sp {
+              margin-bottom: 20px;
+            }
+            .works-content__info-other-item {
+              width: 32.5%;
+              padding: 20px 0px;
+              background-color: variables.$sub-gray;
+              color: variables.$text-white;
+              border-radius: 100px;
+              font-weight: bold;
+              text-align: center;
+              margin-bottom: 10px;
+              @include mixin.sp {
+                width: 49%;
+                font-size: 14px;
+                &:nth-child(5), &:nth-child(6) {
+                  margin-bottom: 0;
+                }
+              }
+              
+            }
+            
+            .execution {
+              background-color: variables.$main-black;
             }
           }
           .wp-video {
