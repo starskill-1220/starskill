@@ -32,6 +32,12 @@
             <p class="works-content__info-item--title">クライアント名</p>
             <p class="works-content__info-item--body"><?php echo the_field("クライアント名") ?> </p>
           </li>
+          <?php if(get_field("制作物リンク先") == true && get_field("発注元") == "他社") : ?>
+            <li class="works-content__info-item">
+            <p class="works-content__info-item--title">サイトURL</p>
+            <a class="works-content__info-item--body" href="<?php echo the_field("制作物リンク先") ?>"><?php echo the_field("制作物リンク先") ?></a>
+          </li>
+          <?php endif ?>
           <li class="works-content__info-item">
             <p class="works-content__info-item--title">サイトカテゴリ</p>
             <p class="works-content__info-item--body"><?php echo the_field("ページの種類") ?></p>
@@ -105,11 +111,11 @@
         </ul>
         <p class="page-works-content__headtext-title">COMMENT</p>
         <?php the_content(); ?>
-        <?php if(get_field("制作物リンク先") == true && get_field("発注元") == "自社") : ?>
-          <a class="btn works-content-pageBtn" href="<?php echo the_field("制作物リンク先") ?>"><?php the_title() ?> のページへ</a>
-        <?php elseif(get_field("制作物リンク先") == true && get_field("発注元") == "他社") : ?>
-          <a class="btn works-content-pageBtn" href="<?php echo the_field("制作物リンク先") ?>"><?php the_title() ?> 様のページへ</a>
-        <?php endif ?>
+        <p class="page-works-content__headtext-title">IMAGE</p>
+        <ul class="page-works-content__image-list">
+          <li class="page-works-content__image-pc"><img src="<?php the_field("pc版"); ?>" alt=""></li>
+          <li class="page-works-content__image-sp"><img src="<?php the_field("sp版"); ?>" alt=""></li>
+        </ul>
       </article>
     </div>
   </div>
