@@ -174,6 +174,7 @@
                 text-align: center;
                 font-weight: bold;
                 @include mixin.sp {
+                  width: 49%;
                   margin-bottom: 0;
                 }
               }
@@ -181,7 +182,15 @@
                 margin-bottom: 0;
                 margin-left: 30px;
                 @include mixin.sp {
+                  margin-left: 15px;
                   padding-top: 0;
+                }
+              }
+              &:nth-child(2) {
+                .works-content__info-item--body {
+                  @include mixin.sp {
+                    font-size: 12px;
+                  }
                 }
               }
             }
@@ -260,7 +269,7 @@
         }
         &::before {
           content: "パソコン版";
-          width: 58%;
+          width: 49%;
           padding: 10px 40px;
           border-radius: 50px;
           background-color: variables.$main-black;
@@ -269,7 +278,7 @@
           font-family: 'Noto Sans JP';
           text-align: center;
           position: absolute;
-          top: -48px;
+          top: -43px;
           left: 0;
           @include mixin.sp {
             padding: 10px 20px;
@@ -278,12 +287,12 @@
           }
         }
         .page-works-content__image-pc {
-          width: 58%;
+          width: 49%;
           height: 700px;
           overflow-y: scroll;
           border-radius: 30px;
           @include mixin.sp {
-            height: 500px;
+            height: 420px;
             border-radius: 20px;
           }
           img {
@@ -297,7 +306,7 @@
         }
         &::after {
           content: "スマホ版";
-          width: 40%;
+          width: 49%;
           padding: 10px 40px;
           border-radius: 50px;
           background-color: variables.$main-black;
@@ -306,7 +315,7 @@
           font-weight: bold;
           text-align: center;
           position: absolute;
-          top: -48px;
+          top: -43px;
           right: 0;
           @include mixin.sp {
             padding: 10px 20px;
@@ -314,12 +323,12 @@
           }
         }
         .page-works-content__image-sp {
-          width: 40%;
+          width: 49%;
           height: 700px;
           overflow-y: scroll;
           border-radius: 30px;
           @include mixin.sp {
-            height: 500px;
+            height: 420px;
             border-radius: 20px;
           }
           img {
