@@ -26,14 +26,21 @@
 </footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"> </script>
-    <script src="<?php echo get_template_directory_uri() ?>/assets/js/index.js" type="text/javaScript" charset="utf-8"></script>
+    
+    
     <script src="<?php echo get_template_directory_uri() ?>/assets/js/rellax.min.js"></script>
     <script src="<?php echo get_template_directory_uri() ?>/assets/js/easing.js" type="text/javaScript" charset="utf-8"></script>
     <!-- スクロールアニメーション -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="<?php echo get_template_directory_uri() ?>/assets/js/particles.js"></script>
-    <script src="<?php echo get_template_directory_uri() ?>/assets/js/app.js"></script>
+    <?php include("current_page.php");?>
+    <?php if($current_page == home_url('/')) : ?>
+      <script src="<?php echo get_template_directory_uri() ?>/assets/js/particles.js"></script>
+      <script src="<?php echo get_template_directory_uri() ?>/assets/js/app.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+      <script src="<?php echo get_template_directory_uri() ?>/assets/js/top.js" type="text/javaScript" charset="utf-8"></script>
+    <?php else :?>
+      <script src="<?php echo get_template_directory_uri() ?>/assets/js/index.js" type="text/javaScript" charset="utf-8"></script>
+    <?php endif ;?>
     <script>
       var rellax = new Rellax('.rellax');
 
