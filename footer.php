@@ -1,26 +1,32 @@
 
 <footer class="">
   <div class="footer-box">
+    <div class="footer__logo-box">
+      <p class="footer__catch-text">お客様に寄り添うホームページ制作事務所</p>
+      <p class="footer__logo">STARSKILL</p>
+      <p class="footer__address">東京都東村山市本町3-13-24 102</p>
+      <p class="footer__phone">080-3377-2819</p>
+    </div>
+    <ul class="footer__nav-list">
+      <li class="footer__nav-item"><a class="footer__nav-item-text" href="<?php echo home_url('/'); ?>">トップページ</a></li>
+      <li class="footer__nav-item"><a class="footer__nav-item-text"href="<?php echo home_url('/'); ?>/service">サービス内容</a></li>
+      <li class="footer__nav-item"><a class="footer__nav-item-text"href="<?php echo home_url('/'); ?>/works">制作事例</a></li>
+      <li class="footer__nav-item"><a class="footer__nav-item-text"href="<?php echo home_url('/'); ?>/about">STARSKILLとは？</a></li>
+      <li class="footer__nav-item"><a class="footer__nav-item-text"href="<?php echo home_url('/'); ?>/contact">お問い合わせ</a></li>
+    </ul>
     <ul class="sns-list">
       <li class="sns-item">
-        <a href="#">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="Twitterリンク">
+        <a href="https://twitter.com/starskill_hk" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
         </a>
       </li>
       <li class="sns-item">
-        <a href="#">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="facebookリンク">
+        <a href="https://www.facebook.com/profile.php?id=100090575318830" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
         </a>
       </li>
     </ul>
-    <div class="footer-textbox">
-      <a class="logo" href="<?php echo home_url('/'); ?>">
-        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo_white.png" alt=""> -->
-        <p>STARSKILL</p>
-      </a>
-      <p class="copyright">© STARSKILL All Rights Reserved.</p>
-    </div>
-    <a href="#"><img class="top-scroll" src="<?php echo get_template_directory_uri(); ?>/img/top-scroll.png" alt=""></a>
+    <p class="footer__copyright">© 2024 STARSKILL ALL RIGHTS RESERVED.</p>
   </div>
   <?php wp_footer(); ?>
 </footer>

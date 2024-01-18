@@ -122,7 +122,7 @@ header {
             content: "-WORKS-";
           }
           &:nth-child(4) .gnav-item-text::after{
-            content: "-ABOUT-";
+            content: "-ABOUT US-";
           }
           &:nth-child(5) .gnav-item-text::after{
             content: "-CONTACT-";
@@ -159,7 +159,6 @@ header {
         }
       }
       .sns-list {
-        width: 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -167,16 +166,20 @@ header {
         bottom: 100px;
         left: 0;
         margin-left: 30px;
-        opacity: 0.5;
         .sns-item {
           width: 32px;
           overflow: hidden;
+          margin-right: 10px;
+          i {
+            font-size: 32px;
+          }
           .sns-icon {
             width: 100%;
             display: inline-block;
             transition: transform 1.8s;
             transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); /* easeInExpo */
             transform: translateY(40px);
+            
             &.fadeUp {
               transform: translateY(0);
             }
