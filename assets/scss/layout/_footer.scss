@@ -56,77 +56,165 @@
 footer {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-  background-color:variables.$background-color;
+  justify-content: center;
+  background-color:variables.$main-black;
+  // border-radius: 50px 50px 0px 0px;
   position: relative;
+  p, a {
+    color: variables.$text-white!important;
+  }
   .footer-box {
-    width: 95%;
-    height: 100px;
+    width: clamp(0px,100%, 1000px);
+    height: clamp(0px, 100%, 200px);
+    padding: 50px 0px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: variables.$sub-gray;
-    border-radius: 50px 0 0 0 ;
+    justify-content: flex-start;
     position: relative;
     @include mixin.sp {
-      height: 120px;
-      align-items: flex-end;
+      width: 78%;
+      height: auto;
+      flex-direction: column;
       border-radius: 30px 0 0 0 ;
+      padding: 50px 0px 50px 0px;
     }
-    .footer-textbox {
+    .footer__logo-box {
+      width: auto;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      transform: translateX(-100px);
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-right: 30px;
+      margin-right: 30px;
+      border-right: 1px solid variables.$sub-gray;
       @include mixin.sp {
-        position: absolute;
-        bottom: 10px;
-        right: -10px;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid variables.$sub-gray;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        padding-right: 0px;
+        margin-right: 0px;
       }
-      .logo {
-        margin-bottom: 6px;
-        p {
-          font-size: 24px;
+      .footer__catch-text {
+        font-size: 13px;
+        font-weight: bold;
+        @include mixin.sp {
+          font-size: clamp(11px,3.8vw,16px);
+          margin-bottom: 3px;
         }
       }
-      .copyright {
+      .footer__logo {
+        font-size: 50px;
+        font-weight: 900;
+        margin-bottom: 5px;
+        @include mixin.sp {
+          font-size: clamp(30px,14vw,58px);
+          margin-bottom: 10px;
+        }
+      }
+      .footer__address {
+        font-size: 12px;
+        margin-bottom: 5px;
+        @include mixin.sp {
+          font-size: 13px;
+        }
+      }
+      .footer__phone {
         font-size: 12px;
         @include mixin.sp {
-          font-size: 10px;
-          line-height: 1em;
+          font-size: 13px;
+        }
+      }
+    }
+    .footer__nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      @include mixin.sp {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      .footer__nav-item {
+        width: 38%;
+        @include mixin.sp {
+          width: 100%;
+          margin-bottom: 20px;
+          &:nth-child(5) {
+            margin-bottom: 0;
+          }
+        }
+        .footer__nav-item-text {
+          font-size: 13px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          letter-spacing: 1px;
+          &::after {
+            font-size: 10px;
+            color: variables.$sub-gray;
+            margin-left: 5px;
+          }
+          @include mixin.sp {
+            font-size: 14px;
+          }
+        }
+        &:nth-child(1) .footer__nav-item-text::after{
+          content: "-TOP-";
+        }
+        &:nth-child(2) .footer__nav-item-text::after{
+          content: "-SERVICE-";
+        }
+        &:nth-child(3) .footer__nav-item-text::after{
+          content: "-WORKS-";
+        }
+        &:nth-child(4) .footer__nav-item-text::after{
+          content: "-ABOUT US-";
+        }
+        &:nth-child(5) .footer__nav-item-text::after{
+          content: "-CONTACT-";
         }
       }
     }
     .sns-list {
-      width: 90px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-left: 40px;
-      opacity: 0.5;
+      justify-content: flex-start;
+      position: absolute;
+      bottom: 50px;
+      right: 0;
       @include mixin.sp {
-        width: 70px;
-        margin-left: 30px;
-        position: absolute;
-        top: 15px;
-        left: -10px;
+        position: static;
+        margin-bottom: 20px;
       }
       .sns-item {
-        width: 35px;
+        color: variables.$text-white;
+        margin-left: 5px;
         @include mixin.sp {
           width: 28px;
+          margin-left: 0;
+          margin-right: 5px;
         }
         a {
-          width: 100%;
+          i{
+            font-size: 26px;
+            @include mixin.sp {
+              font-size: 30px;
+            }
+          }
         }
       }
     }
-    .top-scroll {
-      width: 80px;
+    .footer__copyright {
+      font-size: 12px;
       position: absolute;
-      bottom: 0;
       right: 0;
-      z-index: 100000;
+      bottom: 30px;
+      @include mixin.sp {
+        font-size: 12px;
+        line-height: 1em;
+        position: static;
+      }
     }
   }
 }

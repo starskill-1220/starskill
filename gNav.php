@@ -48,13 +48,13 @@
     </li>
     <ul class="sns-list sp">
       <li class="sns-item">
-        <a href="#">
-          <img class="sns-icon" src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="">
+        <a href="https://twitter.com/starskill_hk" target="_blank">
+          <i class="fa-brands fa-x-twitter sns-icon"></i>
         </a>
       </li>
       <li class="sns-item">
-        <a href="#">
-          <img class="sns-icon" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="">
+        <a href="https://www.facebook.com/profile.php?id=100090575318830" target="_blank">
+        <i class="fa-brands fa-facebook sns-icon"></i>
         </a>
       </li>
     </ul>
