@@ -155,25 +155,26 @@ footer {
             font-size: 10px;
             color: variables.$sub-gray;
             margin-left: 5px;
+            transform: translateY(1px);
           }
           @include mixin.sp {
             font-size: 14px;
           }
         }
         &:nth-child(1) .footer__nav-item-text::after{
-          content: "-TOP-";
+          content: "TOP";
         }
         &:nth-child(2) .footer__nav-item-text::after{
-          content: "-SERVICE-";
+          content: "SERVICE";
         }
         &:nth-child(3) .footer__nav-item-text::after{
-          content: "-WORKS-";
+          content: "WORKS";
         }
         &:nth-child(4) .footer__nav-item-text::after{
-          content: "-ABOUT US-";
+          content: "ABOUT US";
         }
         &:nth-child(5) .footer__nav-item-text::after{
-          content: "-CONTACT-";
+          content: "CONTACT";
         }
       }
     }
