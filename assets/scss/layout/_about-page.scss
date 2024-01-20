@@ -2,6 +2,7 @@
 @use "../common/mixin";
 .content-box {
   .page-about-box {
+    margin-bottom: 40px;
     p {
       line-height: 30px;
       margin-bottom: 0px;
@@ -17,66 +18,56 @@
   .page-about__headtext {
     @include mixin.sp {
       line-height: 20px;
-      margin-bottom: 0px;
     }
   }
   .outline {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     .outline__headtext{
+      width: 100%;
       font-size: 30px;
       font-weight: 600;
-      letter-spacing: 10px;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
-    .outline-box {
+    .outline__img {
+      width: 100%;
+    }
+    .outline__list {
+      width: 100%;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       @include mixin.sp {
         width: 100%;
       }
-      .outline-box__title-list {
-        @include mixin.sp {
-          width: 100%;
-        }
-        .outline-box__title-item {
-          display: flex;
-          margin-right: 50px;
-          margin-bottom: 30px;
+      .outline__item {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 15px;
+        .outline__title {
+          width: 180px;
+          padding: 15px 0px;
+          color: variables.$main-black;
+          background-color: variables.$sub-gray;
+          border-radius: 100px;
+          text-align: center;
+          font-size: clamp(10px, 3.3vw, 14px);
+          font-weight: bold;
+          margin-right: 15px;
           @include mixin.sp {
-            margin-bottom: 20px!important;
-          }
-          .outline-box__title {
-            font-weight: 500;
-            letter-spacing: 0px;
-            @include mixin.sp {
-              font-weight: 600;
-              letter-spacing: 2px;
-              line-height: 14px;
-            }
-            a {
-              text-decoration: underline;
-            }
-            @include mixin.sp {
-              span {
-                margin-top: 6px;
-                line-height: 20px;
-              }
-            }
+            width: 110px;
           }
         }
-      }
-      .outline-box__body-list {
-        .outline-box__body-item {
-          display: flex;
-          margin-bottom: 30px;
-          .outline-box__body {
-            font-weight: 600;
-            letter-spacing: 5px;
+        .outline__body {
+          line-height: 2em;
+          .outline__body--link {
+            font-size: 12px;
+            color: blue;
+            text-decoration: underline;
+            font-weight: normal;
           }
-          .outline-box__body--last {
-            line-height: 14px;
+          @include mixin.sp {
+            font-size: clamp(10px, 3.3vw, 14px);
           }
         }
       }
