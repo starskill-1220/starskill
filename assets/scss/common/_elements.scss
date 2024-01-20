@@ -218,12 +218,7 @@ img {
   .bar{
     width: 100%;
     height:10px;
-    background: linear-gradient(var(--g-angle), var(--g-color-0) var(--g-position-0), var(--g-color-1) var(--g-position-1));
-    --g-color-0: #de6164;
-    --g-position-0: 0%;
-    --g-color-1: #2657eb;
-    --g-position-1: 100%;
-    --g-angle: 90deg;
+    background: variables.$strong-color;
     animation: progress 3.0s normal;
     animation-fill-mode: forwards;
   }
@@ -236,7 +231,7 @@ img {
 }
 .bg.is-animated .bg-wrap::before {
   animation: bg 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
+  background: variables.$strong-color;
   content: "";
   position: absolute;
   top: 0;
@@ -424,7 +419,7 @@ canvas {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    background: variables.$strong-color;/*伸びる背景色の設定*/
+    background: variables.$main-black;/*伸びる背景色の設定*/
     z-index: 1;
 }
 @keyframes bgLRextendAnime{
