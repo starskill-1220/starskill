@@ -1,11 +1,18 @@
 <?php
 
+// 画像アップロード時に各サイズが自動生成されないように制限する
+add_image_size('thumbnail', 0, 0);
+add_image_size('medium', 0, 0);
+add_image_size('medium_large', 0, 0);
+add_image_size('large', 0, 0);
+add_image_size('1536x1536', 0, 0);
+add_image_size('2048x2048', 0, 0);
 
 // head自動出力を全てオフにする
 
 /* DNSプリフェッチ設定の削除 */
 add_filter( 'emoji_svg_url', '__return_false' );
- 
+
 /* 絵文字削除 */
 remove_action( 'wp_head',             'print_emoji_detection_script', 7 );
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
