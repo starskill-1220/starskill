@@ -1,0 +1,18 @@
+@use "../common/variables";
+@use "../common/mixin";
+
+.page-privacy__headtext {
+  padding-bottom: 6px;
+}
+.page-privacy__title {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  @include mixin.sp {
+    font-size: 15px;
+  }
+}
+.page-privacy__body {
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
