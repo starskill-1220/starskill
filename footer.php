@@ -13,6 +13,7 @@
       <li class="footer__nav-item"><a class="footer__nav-item-text"href="<?php echo home_url('/'); ?>/works">制作事例</a></li>
       <li class="footer__nav-item"><a class="footer__nav-item-text"href="<?php echo home_url('/'); ?>/about">STARSKILLとは？</a></li>
       <li class="footer__nav-item"><a class="footer__nav-item-text"href="<?php echo home_url('/'); ?>/contact">お問い合わせ</a></li>
+      <li class="footer__nav-item"><a class="footer__nav-item-text"href="<?php echo home_url('/'); ?>/privacy">プライバシーポリシーについて</a></li>
     </ul>
     <ul class="sns-list">
       <li class="sns-item">
