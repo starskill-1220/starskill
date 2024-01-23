@@ -10,9 +10,9 @@
   <div class="container">
     <!-- <p class="content-firsttext">Webサイト制作/リニューアル・LP(ランディングページ)制作・保守運用代行など、お客様のミッションを達成するために必要なウェブ媒体の制作を行っております。</p> -->
     <ul class="service-tab__list">
-      <li class="service-tab__item active"><a class="pc" href="#">webサイト制作</a><a class="sp" href="#">サイト<br>制作</a></li>
-      <li class="service-tab__item"><a class="pc" href="#">LP制作</a><a class="sp" href="#">LP<br>制作</a></li>
-      <li class="service-tab__item"><a class="pc" href="#">サイト運用保守</a><a class="sp" href="#">運用<br>保守</a></li> 
+      <li id="WebSite" class="service-tab__item active"><a class="pc" href="#">webサイト制作</a><a class="sp" href="#">サイト<br>制作</a></li>
+      <li id="Lp" class="service-tab__item"><a class="pc" href="#">LP制作</a><a class="sp" href="#">LP<br>制作</a></li>
+      <li id="Operation" class="service-tab__item"><a class="pc" href="#">サイト運用保守</a><a class="sp" href="#">運用<br>保守</a></li> 
     </ul>
 
     <ul class="service-panel__list">
