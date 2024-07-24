@@ -1,5 +1,5 @@
-@use "../common/variables";
-@use "../common/mixin";
+@use "../foundation/color";
+@use "../foundation/mixin";
 .footer-contact {
   display: flex;
   flex-wrap: wrap;
@@ -24,11 +24,11 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color:variables.$main-black;
+  background-color:color.$main-black;
   // border-radius: 50px 50px 0px 0px;
   position: relative;
   p, a {
-    color: variables.$text-white!important;
+    color: color.$text-white!important;
   }
   .footer-box {
     width: clamp(0px,100%, 1000px);
@@ -53,11 +53,11 @@ footer {
       align-items: flex-start;
       padding-right: 30px;
       margin-right: 30px;
-      border-right: 1px solid variables.$sub-gray;
+      border-right: 1px solid color.$sub-gray;
       @include mixin.sp {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid variables.$sub-gray;
+        border-bottom: 1px solid color.$sub-gray;
         padding-bottom: 20px;
         margin-bottom: 20px;
         padding-right: 0px;
@@ -110,14 +110,14 @@ footer {
         }
         &:nth-child(6) {
           width: 180px;
-          background-color: variables.$sub-gray;
+          background-color: color.$sub-gray;
           padding: 3px 10px;
           border-radius: 50px;
           .footer__nav-item-text {
             display: block;
             font-size: 10px;
             margin: 0 auto;
-            color: variables.$main-black!important;
+            color: color.$main-black!important;
           }
         }
         @include mixin.sp {
@@ -135,7 +135,7 @@ footer {
           letter-spacing: 1px;
           &::after {
             font-size: 10px;
-            color: variables.$sub-gray;
+            color: color.$sub-gray;
             margin-left: 5px;
             transform: translateY(1px);
           }
@@ -171,7 +171,7 @@ footer {
         margin-bottom: 20px;
       }
       .sns-item {
-        color: variables.$text-white;
+        color: color.$text-white;
         margin-left: 5px;
         @include mixin.sp {
           width: 28px;

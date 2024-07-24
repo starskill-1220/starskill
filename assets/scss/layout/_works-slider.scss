@@ -1,6 +1,5 @@
-
-@use "../common/variables";
-@use "../common/mixin";
+@use "../foundation/color";
+@use "../foundation/mixin";
 .works-slider {
   display: flex;
   flex-wrap: wrap;
@@ -22,7 +21,7 @@
         margin-right: 20px;
         .works-slider__item--img-box {
           width: 100%;
-          border-radius: variables.$border-radius;
+          border-radius: color.$border-radius;
           overflow: hidden;
           img {
             width: 100%;
@@ -39,8 +38,8 @@
           .cat {
             width: fit-content;
             padding: 5px 10px;
-            color: variables.$imp-red;
-            border: 1px solid variables.$imp-red;
+            color: color.$imp-red;
+            border: 1px solid color.$imp-red;
             border-radius: 50px;
             margin: 10px 0px;
           }

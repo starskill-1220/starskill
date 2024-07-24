@@ -1,8 +1,8 @@
-@use "variables";
+@use "color";
 
 
 @mixin sp {
-  @media screen and (max-width: (variables.$sp)) {
+  @media screen and (max-width: (color.$sp)) {
     @content
   }
 }
@@ -40,7 +40,7 @@
   text-shadow:1px 0 #2657eb;
   top:0;
   z-index: -1;
-  color:variables.$main-black;
+  color:color.$main-black;
   background:#ffffff00;
   overflow:hidden;
   clip:rect(0,900px,0,0);
@@ -68,7 +68,7 @@
   text-shadow:1px 0 #2657eb;
   top:0;
   z-index: -1;
-  color:variables.$main-black;
+  color:color.$main-black;
   background:#ffffff00;
   overflow:hidden;
   clip:rect(0,900px,0,0);

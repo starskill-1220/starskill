@@ -1,10 +1,10 @@
-@use "../common/variables";
-@use "../common/mixin";
+@use "../foundation/color";
+@use "../foundation/mixin";
 
 .page-works-content-fv {
   width: 100vw;
   height: 100svh;
-  background-color: variables.$main-black;
+  background-color: color.$main-black;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -29,8 +29,8 @@
       font-weight: bold;
       padding: 4px 10px;
       border-radius: 50px;
-      background-color: variables.$badge-green ;
-      color: variables.$text-white;
+      background-color: color.$badge-green ;
+      color: color.$text-white;
       font-family: 'Noto Sans JP';
       position: absolute;
       top: -30px;
@@ -56,7 +56,7 @@
     .fv-textbox__title {
       font-size: 50px;
       font-weight: bold;
-      color:variables.$text-white;
+      color:color.$text-white;
       letter-spacing: 10px;
       padding: 10px 0px 10px 50px;
       margin-bottom: 30px;
@@ -71,7 +71,7 @@
     .fv-textbox__cat, .fv-textbox__field, .fv-textbox__link {
       font-size: 14px;
       font-weight: bold;
-      color: variables.$text-white;
+      color: color.$text-white;
       letter-spacing: 1px;
       padding: 5px 10px 7px 20px;
       margin-bottom: 10px;
@@ -113,7 +113,7 @@
           .works-content-pageBtn {
             width: 100%;
             text-align: center;
-            background: variables.$strong-color;
+            background: color.$strong-color;
             font-weight: bold;
             margin-bottom: 40px;
             @include mixin.sp {
@@ -168,8 +168,8 @@
               .works-content__info-item--title {
                 width: 180px;
                 padding: 10px 0px;
-                color: variables.$main-black;
-                background-color: variables.$sub-gray;
+                color: color.$main-black;
+                background-color: color.$sub-gray;
                 border-radius: 100px;
                 text-align: center;
                 font-weight: bold;
@@ -212,8 +212,8 @@
             .works-content__info-other-item {
               width: 32.5%;
               padding: 14.5px 0px;
-              background-color: variables.$sub-gray;
-              color: variables.$text-white;
+              background-color: color.$sub-gray;
+              color: color.$text-white;
               border-radius: 100px;
               font-weight: bold;
               text-align: center;
@@ -228,7 +228,7 @@
               }
             }
             .execution {
-              background-color: variables.$main-black;
+              background-color: color.$main-black;
             }
           }
           .wp-video {
@@ -270,8 +270,8 @@
           width: 49%;
           padding: 10px 40px;
           border-radius: 50px;
-          background-color: variables.$main-black;
-          color: variables.$text-white;
+          background-color: color.$main-black;
+          color: color.$text-white;
           font-weight: bold;
           font-family: 'Noto Sans JP';
           text-align: center;
@@ -307,8 +307,8 @@
           width: 49%;
           padding: 10px 40px;
           border-radius: 50px;
-          background-color: variables.$main-black;
-          color: variables.$text-white;
+          background-color: color.$main-black;
+          color: color.$text-white;
           font-family: 'Noto Sans JP';
           font-weight: bold;
           text-align: center;

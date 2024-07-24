@@ -1,5 +1,6 @@
 @use "mixin";
-@use "variables";
+@use "color";
+
 // ノイズっぽいテキストエフェクト
 @keyframes noise-anim-1{
   $steps:20;
