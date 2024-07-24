@@ -1,7 +1,7 @@
 <article id="sns" class="service-box">
   <p class="service-number">[03]</p>
   <h2 class="service-name">サイト運用保守</h2>
-  <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/service-sns.png" alt="" class="service-img"> -->
+  <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-sns.png" alt="" class="service-img"> -->
   <p class="service-text">webサイトは作って終わりではなく、むしろスタートです。実際に運用していく中で、サーバーやドメインの管理や監視が必要になったり、内部システムのアップデートにより互換性が崩れWebサイトそのものにバグが起きたりするもの。<br>
   <br>
     STARSKILLでは、制作後のWebサイトも"ジブンゴト"として管理させていただき、快適にご利用いただけるよう保守させていただきます。</p>
@@ -16,22 +16,22 @@
     <p class="service-subtext">[具体的なアクションプラン]</p>
     <ul class="service-list-slider">
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider01.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-slider01.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">企画・戦略</p>
         <p class="service-slider-item-price"></p>
       </li>
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider02.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-slider02.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">3C分析・ペルソナ設定</p>
         <p class="service-slider-item-price">50,000円〜</p>
       </li>
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider03.png" alt="" class="service-slider-item-img design-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-slider03.png" alt="" class="service-slider-item-img design-img">
         <p class="service-slider-item-title">オリジナルデザイン</p>
         <p class="service-slider-item-price">50,000円〜</p>
       </li>
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider04.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-slider04.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">コーディング</p>
         <p class="service-slider-item-price">30,000円〜</p>
       </li>
@@ -39,8 +39,8 @@
   </div> -->
   <!-- <div class="service-other-box">
     <p class="service-subtext">[その他対応可能]</p>
-    <img src="<?php echo get_template_directory_uri(); ?>/img/service01-other.png" alt="" class="service-other-text-img pc">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/service01-other--sp.png" alt="" class="service-other-text-img sp">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-other.png" alt="" class="service-other-text-img pc">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-other--sp.png" alt="" class="service-other-text-img sp">
     <p class="service-other-description">※1　納品後の修正も大きな変更(セクション自体を丸々デザインしなおし等)でなければ一部変更の希望も臨機応変に対応させていただきます。(大きな変更の場合は、別途料金が発生する可能性があります)</p>
     <p class="service-other-description">※2　サーバー契約代行はエックスサーバーの有料プランにてお客様ご名義で契約作業を代行させていただきます。発生する費用は制作費とは別にご請求となります。</p>
     <p class="service-other-description">※3　ドメイン取得代行はエックスドメインにてお客様ご名義で契約作業を代行させていただきます。発生する費用は制作費とは別にご請求となります。</p>

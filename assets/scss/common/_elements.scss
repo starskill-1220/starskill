@@ -17,20 +17,38 @@ p, a, h1, h2, h3, h4, span , label, .btn {
   @include mixin.strong-color
 }
 
-.section-headtext {
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-  @include mixin.sp {
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 0px;
-    margin-bottom: 0px;
-    display: inline-block;
-    padding-bottom: 10px;
+.section-headbox {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0px 90px 0px 90px;
+  margin-bottom: 100px;
+  text-align: left;
+  .section-headtext {
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    span {
+      font-size: 80px;
+      font-weight: 900;
+      display: inline;
+    }
+    @include mixin.sp {
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 0px;
+      margin-bottom: 0px;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+  }
+  .section-desc {
+    font-size: 16px;
+    font-weight: 900;
   }
 }
+
 
 img {
   width: 100%;
@@ -38,15 +56,20 @@ img {
 }
 
 .btn {
-  font-size: 14px;
-  color: variables.$text-white;
-  font-weight: normal;
-  letter-spacing: 1px;
-  font-weight: bold;
-  border-radius: 50px;
-  background-color: variables.$main-black;
-  padding: 24px 100px;
-  display: inline-block;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 900;
+  border-bottom: 2px solid variables.$main-black;
+  padding-bottom: 8px;
+  padding:0px 10px 8px 0px;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: ">";
+    font-size: 23px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
   @include mixin.sp {
     width: clamp(200px,100%,300px);
     margin: 0 auto;

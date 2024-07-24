@@ -1,12 +1,18 @@
 @use "../common/variables";
 @use "../common/mixin";
 header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999999;
   @include mixin.sp {
     width: 100%;
     height: 7svh;
     display: flex;
     justify-content: center;
     align-items: center;
+    .header-inner {
     .gnav-shadow {
       width: 100vw;
       height: 100vh;
@@ -27,11 +33,16 @@ header {
       background-color: #ffffffb1;
     }
   }
+  }
+  .header-inner {
+    width: clamp(1320px, 90vw, 1740px);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   .header-logo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0px;
+    justify-content: center;
     @include mixin.sp {
       margin: 0px;
       position: fixed;
@@ -40,10 +51,9 @@ header {
       opacity: 1;
       transition: 1s;
       z-index: 10000;
-      align-items: flex-start;
     }
     h1, p {
-      font-size: 40px;
+      font-size: 30px;
       font-weight: 800;
       letter-spacing: 3px;
       @include mixin.sp {
@@ -57,22 +67,15 @@ header {
         }
       }
     }
-    .header-logo__subtext {
-      font-size: 12px;
-      font-weight: 800;
-      margin-top: 3px;
-      @include mixin.sp {
-        font-size: 14px;
-        font-weight: 500;
-        transform: translateX(2px);
-      }
-    }
+    
 
   }
   .gnav-box {
+    width: 60%;
+    max-width: 680px;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     @include mixin.sp {
       width: clamp(200px , 50vw,300px);
       height: 100vh;
@@ -82,15 +85,16 @@ header {
       margin-bottom: 0px;
       position: fixed;
       top: 0;
-      right: -50vw;
+      right: -55vw;
       z-index: 100001;
       transition: 0.5s;
       transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
     }
     .gnav-list {
-      width: 680px;
+      width: 100%;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       @include mixin.sp {
         width: 85%;
         height: 100svh;
@@ -148,10 +152,21 @@ header {
           }
         }
         .gnav-text-gray {
+          transition: transform 1.3s;
+            transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); /* easeInExpo */
+            transform: translateY(2px);
           &::after {
             border-top: 2px solid;
             border-image: linear-gradient(to right, #5681f8 0%, #7B37F2 50%, #DB5F9F 100%) 1;
-            
+          }
+          @include mixin.sp {
+              transition: transform 1.3s;
+              transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); /* easeInExpo */
+              transform: translateY(40px);
+              &::after {
+                border-top: 2px solid;
+                border-image: linear-gradient(to right, #5681f8 0%, #7B37F2 50%, #DB5F9F 100%) 1;
+              }
           }
         }
         p {
@@ -203,6 +218,8 @@ header {
     }
   }
 }
+}
+
 
 .header-white {
   .logo h1, .logo p, .gnav-item a {
@@ -222,6 +239,15 @@ header {
           }
           &.fadeDown {
             transform: translateY(40px);
+          }
+        }
+        .gnav-text-gray {
+          transition: transform 1.3s;
+          transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); /* easeInExpo */
+          transform: translateY(40px);
+          &::after {
+            border-top: 2px solid;
+            border-image: linear-gradient(to right, #5681f8 0%, #7B37F2 50%, #DB5F9F 100%) 1;
           }
         }
       }
@@ -270,10 +296,14 @@ header {
       opacity: 0;
       transition: 1s;
     }
-    .gnav-open {
-      right: 0;
-      transition: 0.5s;
-      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    .header-inner {
+
+      .gnav-open {
+        right: 0;
+        transition: 0.5s;
+        transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+      }
+  
     }
   }
 }

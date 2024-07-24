@@ -16,17 +16,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           header-black
         <?php endif ?>
       ">
+      <div class="header-inner">
         <a class="logo header-logo" href="<?php echo home_url('/'); ?>">
         <?php include("current_page.php");?>
         <?php if($current_page == home_url('/')) : ?>
           <h1 data-text3="STARSKILL">STARSKILL</h1>
-          <p class="header-logo__subtext">魅力を“伝える”ホームページ制作</p>
         <?php else : ?>
           <p data-text3="STARSKILL">STARSKILL</p>
-          <p class="header-logo__subtext">魅力を“伝える”ホームページ制作</p>
-
         <?php endif ?>
         </a>
         <?php get_template_part('gNav') ?>
+      </div>
+        
+
       </header>
     
