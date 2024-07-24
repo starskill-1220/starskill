@@ -1,5 +1,5 @@
-@use "../common/variables";
-@use "../common/mixin";
+@use "../foundation/color";
+@use "../foundation/mixin";
 header {
   width: 100%;
   display: flex;
@@ -81,7 +81,7 @@ header {
       height: 100vh;
       justify-content: flex-start;
       align-items: center;
-      background-color: variables.$sub-gray;
+      background-color: color.$sub-gray;
       margin-bottom: 0px;
       position: fixed;
       top: 0;
@@ -111,7 +111,7 @@ header {
           .gnav-item-text {
             display: flex;
             flex-direction: column;
-            color: variables.$main-black;
+            color: color.$main-black;
             transition: transform 1.3s;
             transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); /* easeInExpo */
             transform: translateY(40px);
@@ -123,7 +123,7 @@ header {
             }
             &::after {
               font-size: 11px;
-              border-top: 1px solid variables.$main-black;
+              border-top: 1px solid color.$main-black;
               margin-top: 3px;
             }
           }
@@ -230,7 +230,7 @@ header {
       .gnav-item {
         overflow: hidden;
         .gnav-item-text {
-          color: variables.$main-black;
+          color: color.$main-black;
           transition: transform 1s;
           transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); /* easeInExpo */
           transform: translateY(40px);

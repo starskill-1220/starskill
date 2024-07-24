@@ -1,5 +1,5 @@
-@use "../common/variables";
-@use "../common/mixin";
+@use "../../foundation/color";
+@use "../../foundation/mixin";
 
 /* ポインター設定 */
 .cursor,.follower,.follower_2{
@@ -9,7 +9,6 @@
   left:0;
   pointer-events:none;
   z-index:99999999999999999999999;
-  
 }
 
 .follower{

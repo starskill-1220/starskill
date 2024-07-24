@@ -1,5 +1,5 @@
-@use "../common/variables";
-@use "../common/mixin";
+@use "../foundation/color";
+@use "../foundation/mixin";
   .page-works-list {
     width: 1170px;
     display: flex;
@@ -15,7 +15,7 @@
       position: relative;
       border-radius: 30px;
       overflow: hidden;
-      box-shadow: 5px 5px 10px variables.$box-shadow;
+      box-shadow: 5px 5px 10px color.$box-shadow;
       @include mixin.sp {
         width: 100%;
         margin-right: 0px;
@@ -33,8 +33,8 @@
           font-size: 12px;
           padding: 4px 10px;
           border-radius: 50px;
-          background-color: variables.$badge-green ;
-          color: variables.$text-white;
+          background-color: color.$badge-green ;
+          color: color.$text-white;
           position: absolute;
           top: -30px;
           left: 10px;
@@ -45,7 +45,7 @@
           position: absolute;
           bottom: 0;
           left: 0;
-          background-color: variables.$main-black;
+          background-color: color.$main-black;
           border-radius: 0px 30px 0px 30px;
           padding: 20px 20px 20px 24px;
           @include mixin.sp {
@@ -55,7 +55,7 @@
             padding: 15px 10px 15px 24px;
           }
           .works-name {
-            color: variables.$text-white;
+            color: color.$text-white;
             font-weight: 600;
             line-height: 1em;
             margin-bottom: 10px;
@@ -66,7 +66,7 @@
           }
           .works-cat {
             font-size: 10px;
-            color: variables.$text-white;
+            color: color.$text-white;
             font-weight: 600;
             line-height: 1em;
             @include mixin.sp {
