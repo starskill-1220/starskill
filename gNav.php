@@ -40,7 +40,7 @@
     </li>
     <li class="gnav-item">
       <?php if( $current_page == home_url('/'). "contact/") : ?>
-        <p class="gnav-item-text gnav-text-gray"">お問い合わせ</p>
+        <p class="gnav-item-text gnav-text-gray">お問い合わせ</p>
       <?php else : ?>
         <a class="gnav-item-text" href="<?php echo home_url('/'); ?>/contact">お問い合わせ</a>
       <?php endif ; ?>

@@ -1,7 +1,7 @@
 <article id="website" class="service-box">
   <p class="service-number">[01]</p>
   <h2 class="service-name">webサイト制作</h2>
-  <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/service-website.png" alt="" class="service-img"> -->
+  <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-website.png" alt="" class="service-img"> -->
   <p class="service-text">ウェブサイトの本質は「信用力の提示」と「良質な導線」です。御社のサービスに興味を抱いてサイトに来訪された方にしっかりとした門構えをもってお出迎えし、『信用できる』と判断されなければ事業の拡大は難しくなります。<br><br>
     STARSKILLでは『信用・信頼』と『スムーズな導線』に重きをおき、一期一会の来訪をしっかりとキャッチできるWebサイトを制作します。</p>
   <div class="service-price-box">
@@ -15,27 +15,27 @@
     <p class="service-subtext">[制作可能なWebサイト]</p>
     <ul class="service-list-slider">
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service02-corpo.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service02-corpo.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">コーポレートサイト</p>
         <p class="service-slider-item-price">178,000円(税込)〜</p>
       </li>
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service02-recruit.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service02-recruit.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">リクルートサイト</p>
         <p class="service-slider-item-price">178,000円(税込)〜</p>
       </li>
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service02-artist.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service02-artist.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">アーティストサイト</p>
         <p class="service-slider-item-price">148,000円(税込)〜</p>
       </li>
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service02-portfolio.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service02-portfolio.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">ポートフォリオサイト</p>
         <p class="service-slider-item-price">145,000円(税込)〜</p>
       </li>
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service02-blog.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service02-blog.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">ブログサイト</p>
         <p class="service-slider-item-price">145,000円(税込)〜</p>
       </li>
@@ -45,27 +45,27 @@
     <p class="service-subtext">[制作工程ごとの目安]</p>
     <ul class="service-list-slider">
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider01.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-slider01.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">企画構成・ディレクション</p>
         <p class="service-slider-item-price">15,000円〜</p>
       </li>
       <!-- <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider02.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-slider02.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">プロトタイプ作成</p>
         <p class="service-slider-item-price">10,000円〜</p>
       </li> -->
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider03.png" alt="" class="service-slider-item-img design-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-slider03.png" alt="" class="service-slider-item-img design-img">
         <p class="service-slider-item-title">オリジナルデザイン</p>
         <p class="service-slider-item-price">60,000円〜</p>
       </li>
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service02-wordpress.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service02-wordpress.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">コーディング(WP構築)</p>
         <p class="service-slider-item-price">70,000円〜</p>
       </li>
       <!-- <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service02-slider06.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service02-slider06.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">下層ページのコーディング</p>
         <p class="service-slider-item-price">100,000円〜</p>
       </li> -->

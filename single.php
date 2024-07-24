@@ -23,34 +23,11 @@
   </div>
 </div>
 <div class="page-works-content__content">
-  <div class="content-box">
+  <div class="content-box works-content">
     <div class="container">
       <article class="page-works-content__headtext-box">
-        <p class="page-works-content__headtext-title">INFOMATION</p>
-        <ul class="works-content__info-list">
-          <li class="works-content__info-item">
-            <p class="works-content__info-item--title">クライアント名</p>
-            <p class="works-content__info-item--body"><?php echo the_field("クライアント名") ?> </p>
-          </li>
-          <?php if(get_field("制作物リンク先") == true && get_field("発注元") == "他社") : ?>
-            <li class="works-content__info-item">
-            <p class="works-content__info-item--title">サイトURL</p>
-            <a class="works-content__info-item--body" href="<?php echo the_field("制作物リンク先") ?>"><?php echo the_field("制作物リンク先") ?></a>
-          </li>
-          <?php endif ?>
-          <li class="works-content__info-item">
-            <p class="works-content__info-item--title">サイトカテゴリ</p>
-            <p class="works-content__info-item--body"><?php echo the_field("ページの種類") ?></p>
-          </li>
-          <li class="works-content__info-item">
-            <p class="works-content__info-item--title">エリア</p>
-            <p class="works-content__info-item--body"><?php echo the_field("エリア") ?></p>
-          </li>
-          <li class="works-content__info-item">
-            <p class="works-content__info-item--title">制作期間</p>
-            <p class="works-content__info-item--body"><?php echo the_field("制作期間") ?>日間</p>
-          </li>
-        </ul>
+        <p class="page-works-content__headtext-title">COMMENT</p>
+        <?php the_content(); ?>
         <p class="works-content__headtext-sub">対応させていただいたこと</p>
         <ul class="works-content__info-other-list">
           <li class="works-content__info-other-item 
@@ -109,8 +86,32 @@
             execution
           <?php endif ?>">運用保守契約</li>
         </ul>
-        <p class="page-works-content__headtext-title">COMMENT</p>
-        <?php the_content(); ?>
+        <p class="page-works-content__headtext-title">INFOMATION</p>
+        <ul class="works-content__info-list">
+          <li class="works-content__info-item">
+            <p class="works-content__info-item--title">クライアント名</p>
+            <p class="works-content__info-item--body"><?php echo the_field("クライアント名") ?> </p>
+          </li>
+          <?php if(get_field("制作物リンク先") == true && get_field("発注元") == "他社") : ?>
+            <li class="works-content__info-item">
+            <p class="works-content__info-item--title">サイトURL</p>
+            <a class="works-content__info-item--body" href="<?php echo the_field("制作物リンク先") ?>"><?php echo the_field("制作物リンク先") ?></a>
+          </li>
+          <?php endif ?>
+          <li class="works-content__info-item">
+            <p class="works-content__info-item--title">サイトカテゴリ</p>
+            <p class="works-content__info-item--body"><?php echo the_field("ページの種類") ?></p>
+          </li>
+          <li class="works-content__info-item">
+            <p class="works-content__info-item--title">エリア</p>
+            <p class="works-content__info-item--body"><?php echo the_field("エリア") ?></p>
+          </li>
+          <li class="works-content__info-item">
+            <p class="works-content__info-item--title">制作期間</p>
+            <p class="works-content__info-item--body"><?php echo the_field("制作期間") ?>日間</p>
+          </li>
+        </ul>
+        
         <p class="page-works-content__headtext-title">IMAGE</p>
         <ul class="page-works-content__image-list">
           <li class="page-works-content__image-pc"><img src="<?php the_field("pc版"); ?>" alt=""></li>

@@ -16,6 +16,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           header-black
         <?php endif ?>
       ">
+      <div class="header-inner">
         <a class="logo header-logo" href="<?php echo home_url('/'); ?>">
         <?php include("current_page.php");?>
         <?php if($current_page == home_url('/')) : ?>
@@ -25,6 +26,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <?php endif ?>
         </a>
         <?php get_template_part('gNav') ?>
+      </div>
+        
 
       </header>
     
