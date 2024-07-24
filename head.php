@@ -26,7 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <?php endif ?>
 
     <!-- css -->
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" type="text/css" />
     <!-- slickのCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
@@ -52,18 +52,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:title" content="STARSKILL" />
     <meta property="og:type" content="website">
     <meta property="og:description" content="こんなサイト作ります。ホームページ制作は「STARSKILL」へ" />
-    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/twitter-card.png" />
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/twitter-card.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="" />
     <meta property="og:site_name" content="STARSKILL" />
     <meta property="og:locale" content="ja_JP" />
     <meta property="fb:app_id" content="appIDを入力" />
     <!--サイトアイコンの指定-->
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/icon.png" sizes="16x16" type="image/png" />
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/icon.png" sizes="32x32" type="image/png" />
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/icon.png" sizes="48x48" type="image/png" />
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/icon.png" sizes="62x62" type="image/png" />
-    <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/img/icon.png" /><!--スマホ用のホーム画面アイコン画像-->
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon.png" sizes="48x48" type="image/png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon.png" sizes="62x62" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon.png" /><!--スマホ用のホーム画面アイコン画像-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 

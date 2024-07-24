@@ -37,7 +37,7 @@
     <meta property="og:title" content="STARSKILL.jp" />
     <meta property="og:type" content="website">
     <meta property="og:description" content="LP・Webデザイン事務所「STARSKILL.jp」のWebサイト" />
-    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/sample01/twitter-card.png" />
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/twitter-card.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="" />
     <meta property="og:site_name" content="STARSKILL.jp" />
@@ -45,11 +45,11 @@
     <meta property="fb:app_id" content="appIDを入力" />
     
     <!--サイトアイコンの指定-->
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/sample01/icon.png" sizes="16x16" type="image/png" />
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/sample01/icon.png" sizes="32x32" type="image/png" />
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/sample01/icon.png" sizes="48x48" type="image/png" />
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/sample01/icon.png" sizes="62x62" type="image/png" />
-    <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/img/sample01/icon.png" /><!--スマホ用のホーム画面アイコン画像-->
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/icon.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/icon.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/icon.png" sizes="48x48" type="image/png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/icon.png" sizes="62x62" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/icon.png" /><!--スマホ用のホーム画面アイコン画像-->
 
 
 
@@ -64,8 +64,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="header">
       <div class="container">
         <a class="logo header-logo" href="<?php echo home_url('/'); ?>">
-          <img class="logo-white" src="<?php echo get_template_directory_uri(); ?>/img/sample01/logo.png" alt="">
-          <img class="logo-black" src="<?php echo get_template_directory_uri(); ?>/img/sample01/logo-black.png" alt="">
+          <img class="logo-white" src="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/logo.png" alt="">
+          <img class="logo-black" src="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/logo-black.png" alt="">
         </a>
         <div class="menu-trigger-box">
           <p class="menu-trigger sp" href="#">
@@ -92,10 +92,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="fv-headtext__description">私たちの価値を提供する</h2>
   </div>
   <div class="fv-background__box">
-    <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/sample01/fv-background--purple.png" alt="" class="fv-background__img--purple">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/sample01/fv-background--gold.png" alt="" class="fv-background__img--gold"> -->
+    <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/fv-background--purple.png" alt="" class="fv-background__img--purple">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/fv-background--gold.png" alt="" class="fv-background__img--gold"> -->
     <div class="fv-background__black"></div>
-    <video src="<?php echo get_template_directory_uri(); ?>/img/sample01/fv-video.mp4" class="fv-background__video"
+    <video src="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/fv-video.mp4" class="fv-background__video"
       autoplay
       muted
       loop
@@ -128,21 +128,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <ul class="products-list">
       <li class="products-list__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/sample01/products-list__img01.png" alt="" class="products-list__item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/products-list__img01.png" alt="" class="products-list__item-img">
         <div class="products-list-textbox">
           <p class="products-list-textbox__title">ウェブ制作事業</p>
           <p class="products-list-textbox__body">STARSKILL.jpは、お客様の商品を使っていただけた</p>
         </div>
       </li>
       <li class="products-list__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/sample01/products-list__img02.png" alt="" class="products-list__item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/products-list__img02.png" alt="" class="products-list__item-img">
         <div class="products-list-textbox">
           <p class="products-list-textbox__title">LP(ランディングページ)制作事業</p>
           <p class="products-list-textbox__body">STARSKILL.jpは、お客様の商品を使っていただけた</p>
         </div>
       </li>
       <li class="products-list__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/sample01/products-list__img03.png" alt="" class="products-list__item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/products-list__img03.png" alt="" class="products-list__item-img">
         <div class="products-list-textbox">
           <p class="products-list-textbox__title">SNS運用代行事業</p>
           <p class="products-list-textbox__body">STARSKILL.jpは、お客様の商品を使っていただけた</p>
@@ -164,7 +164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="" class="btn">採用情報へ</a>
       </div>
       <div class="recruit-box__parallax-box">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/sample01/recruit-parallax__img.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/recruit-parallax__img.png" alt="">
       </div>
     </div>
   </div>
@@ -206,7 +206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        <div class="footer-leftbox">
          <div class="footer__contact rich-text"><a href="">Contact Us →</a></div>
          <div class="footer-logo-copyright">
-           <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/img/sample01/logo.png" alt="">
+           <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/sample01/logo.png" alt="">
            <p class="copyright">© STARSKILL.jp All Rights Reserved.</p>
          </div>
        </div>

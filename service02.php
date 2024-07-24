@@ -1,7 +1,7 @@
 <article id="lp" class="service-box">
   <p class="service-number">[02]</p>
   <h2 class="service-name">LP制作</h2>
-  <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/service-lp.png" alt="" class="service-img"> -->
+  <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-lp.png" alt="" class="service-img"> -->
   <p class="service-text">LPはただ作っておいておくだけでは、全く売上が立ちません。圧倒的なユーザー数の中からお客さまの商品を『誰に訴求すべきなのか』をたしかな根拠を持って設定し、ターゲット”のみ”にLPを届けることが重要です。<br><br>
     STARSKILLでは顧客のニーズ・競合他社・自社商品の強みと弱みなどを並べて分析し、お客様の商品を欲しがっている架空の顧客像(ペルソナ)を細かく設定します。ペルソナ”だけ”に集中してLPを制作することによって、貴重な広告費の費用帯効果を最大まで高めることができ、コンバージョン率(CVR)の大幅向上に繋がります。</p>
   <div class="service-price-box">
@@ -14,22 +14,22 @@
     <p class="service-subtext">[制作費の目安]</p>
     <ul class="service-list-slider">
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider01.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-slider01.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">企画構成・ディレクション</p>
         <p class="service-slider-item-price">9,000円〜</p>
       </li>
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider02.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-slider02.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">3C分析・ペルソナ設定</p>
         <p class="service-slider-item-price">10,000円〜</p>
       </li>
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider03.png" alt="" class="service-slider-item-img design-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-slider03.png" alt="" class="service-slider-item-img design-img">
         <p class="service-slider-item-title">オリジナルデザイン</p>
         <p class="service-slider-item-price">30,000円〜</p>
       </li>
       <li class="service-slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/service01-slider04.png" alt="" class="service-slider-item-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service01-slider04.png" alt="" class="service-slider-item-img">
         <p class="service-slider-item-title">コーディング</p>
         <p class="service-slider-item-price">40,000円〜</p>
       </li>
