@@ -42,13 +42,7 @@ header {
     align-items: center;
   .header-logo {
     display: flex;
-<<<<<<< HEAD
     justify-content: center;
-=======
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0px;
->>>>>>> main
     @include mixin.sp {
       margin: 0px;
       position: fixed;
@@ -57,10 +51,9 @@ header {
       opacity: 1;
       transition: 1s;
       z-index: 10000;
-      align-items: flex-start;
     }
     h1, p {
-      font-size: 40px;
+      font-size: 30px;
       font-weight: 800;
       letter-spacing: 3px;
       @include mixin.sp {
@@ -74,16 +67,7 @@ header {
         }
       }
     }
-    .header-logo__subtext {
-      font-size: 12px;
-      font-weight: 800;
-      margin-top: 3px;
-      @include mixin.sp {
-        font-size: 14px;
-        font-weight: 500;
-        transform: translateX(2px);
-      }
-    }
+    
 
   }
   .gnav-box {
