@@ -11,6 +11,6 @@
       業務委託をお考えの代理店・制作会社さまも<br>
       お気軽にご連絡ください。
     </p>
-    <a href="<?php echo home_url('/'); ?>/contact" class="btn" id="contactBtn">問い合わせる</a>
+    <a href="<?php echo home_url('/'); ?>/contact" class="c-btn" id="contactBtn">問い合わせる</a>
   </div>
 </section>

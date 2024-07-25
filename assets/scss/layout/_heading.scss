@@ -1,0 +1,77 @@
+@use "../foundation/color";
+@use "../foundation/mixin";
+
+.l-section-heading {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0px 90px 0px 90px;
+  margin-bottom: 100px;
+  text-align: left;
+  &__headtext {
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    span {
+      font-size: 80px;
+      font-weight: 900;
+      display: inline;
+    }
+    @include mixin.sp {
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 0px;
+      margin-bottom: 0px;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+  }
+  &__desc {
+    font-size: 16px;
+    font-weight: 900;
+  }
+}
+
+.l-page-heading {
+  display: flex;
+  justify-content: center;
+  background-color: color.$sub-gray;
+  border-radius: 50px 50px 0px 0px;
+  margin-top: 100px;
+  // transform: translateY(50px);
+  @include mixin.sp {
+    border-radius: 30px 30px 0px 0px;
+    transform: translateY(0px);
+    position: relative;
+    z-index: 1;
+  }
+  .l-page-heading__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px 100px 0px;
+    @include mixin.sp {
+      padding: 30px 0px 50px 0px;
+    }
+    .headtext {
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 10px;
+      margin-bottom: 6px;
+      @include mixin.sp {
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+        @include mixin.strong-color
+      }
+    }
+    .desc {
+      font-size: 12px;
+      line-height: 1.5em;
+      @include mixin.sp {
+        letter-spacing: 0px;
+        @include mixin.strong-color
+      }
+    }
+  }
+}

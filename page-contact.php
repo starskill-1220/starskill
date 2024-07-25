@@ -38,7 +38,7 @@
         <textarea type="text" class="contact-list__textarea"></textarea>
       </li>
     </ul>
-    <button class="btn">確認する</button> -->
+    <button class="c-btn">確認する</button> -->
   </div>
 </div>
 <?php get_footer(); ?>

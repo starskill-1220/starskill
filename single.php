@@ -2,9 +2,9 @@
 <div class="page-works-content-fv">
   <img class="page-works-content-fv__background rellax" data-rellax-speed="2"  src="<?php echo get_the_post_thumbnail_url(); ?>" alt="制作実績画像">
   <?php if(get_field("スクロールバーの色") == "white"): ?>
-    <div class="scrolldown"></div>
+    <div class="c-scrolldown"></div>
   <?php elseif(get_field("スクロールバーの色") == "black"): ?>
-    <div class="scrolldown scrolldown--black"></div>
+    <div class="c-scrolldown c-scrolldown--black"></div>
   <?php endif ?>
   <div class="fv-textbox
               <?php if(get_field("サンプル制作物") == "サンプル制作物") : ?>
