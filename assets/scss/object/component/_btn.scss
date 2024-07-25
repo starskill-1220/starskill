@@ -1,0 +1,28 @@
+@use "../../foundation/mixin";
+@use "../../foundation/color";
+
+
+
+.c-btn {
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 900;
+  border-bottom: 2px solid color.$main-black;
+  padding-bottom: 8px;
+  padding:0px 10px 8px 0px;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: ">";
+    font-size: 23px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  @include mixin.sp {
+    width: clamp(200px,100%,300px);
+    margin: 0 auto;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+}
+

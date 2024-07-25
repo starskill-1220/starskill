@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
-<div class="page-headbox">
-  <div class="page-headtextbox">
-    <p class="page-headline">ABOUT</p>
-    <h1 class="page-description">STARSKILLについて</h1>
+<div class="l-page-heading">
+  <div class="l-page-heading__wrapper">
+    <p class="headtext">ABOUT</p>
+    <h1 class="desc">STARSKILLについて</h1>
   </div>
 </div>
 
-<div class="content-box">
-  <div class="container">
+<div class="l-content__wrapper">
+  <div class="l-content__container">
     <div class="page-about-box">
     <?php the_content(); ?>
     </div>

@@ -16,5 +16,5 @@
       <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/page-works__background--starskill02.png" alt=""></li>
     </ul>
     <p class="service-works-loop-slider-text">制作事例は以下よりご覧いただけます</p>
-  <a class="btn" href="<?php echo home_url('/'); ?>/works">WORKS</a>
+  <a class="c-btn" href="<?php echo home_url('/'); ?>/works">WORKS</a>
   </div> -->

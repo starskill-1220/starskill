@@ -1,6 +1,6 @@
-@use "../foundation/color";
-@use "../foundation/mixin";
-.section0 {
+@use "../../foundation/color";
+@use "../../foundation/mixin";
+.p-top-fv {
   width: 100%;
   height: auto;
   margin-top: 100px;
@@ -17,20 +17,20 @@
     bottom: 0;
     z-index: -1;
   }
-  .fv-box {
+  .p-top-fv__wrapper {
     width: 100%;
     max-width: 1920px;
     display: flex;
     justify-content: space-between;
     position: relative;
-    .fv-text-box {
+    .p-top-fv__text-box {
       width: 30%;
       max-width: 400px;
       height: 100%;
       margin-top: 12svh;
       margin-left: 90px;
       z-index: 1;
-      .fv-heading-box {
+      .p-top-fv__heading-box {
         margin-bottom: 50px;
         h2 {
           font-size: clamp(30px, 4vw, 50px);
@@ -52,7 +52,7 @@
           }
         }
       }
-      .fv-description-box {
+      .p-top-fv__description-box {
         transform: translateX(10px);
         p {
           display: inline-block;
@@ -66,7 +66,7 @@
         }
       }
     }
-    .fv-img-box {
+    .p-top-fv__img-box {
       width: 70%;
       height: 80svh;
       overflow: hidden;
@@ -78,11 +78,11 @@
   }
 }
 
-.section1 {
+.p-top-about {
   background-color: color.$background-color-sub;
   display: flex;
   justify-content: center;
-  .about-box {
+  .p-top-about__wrapper {
     width: 100%;
     max-width: 1920px;
     padding: 100px 90px;
@@ -105,7 +105,7 @@
       bottom: 0;
       right: 0;
     }
-    .concept-box {
+    .p-top-about__concept-box {
       width: 45%;
       position: relative;
       h2 {
@@ -171,7 +171,7 @@
         }
       }
     }
-    .explanation-box {
+    .p-top-about__explanation-box {
       width: 55%;
       padding-bottom: 280px;
       z-index: 1;
@@ -187,7 +187,7 @@
           width: 150%;
         }
       }
-      .text-box{
+      .p-top-about__text-box{
         display: flex;
         flex-direction: column;
         position: relative;
@@ -198,7 +198,7 @@
           line-height: 2em;
           margin-bottom: 30px;
         }
-        .btn {
+        .c-btn {
           position: absolute;
           bottom: 0;
           right: 0;
@@ -208,7 +208,7 @@
   }
 }
 
-.section2 {
+.p-top-service {
   background-color: color.$background-color;
   border-radius: 50px;
   transform: translateY(-50px);
@@ -223,11 +223,11 @@
     padding-bottom: 50px;
     width: clamp( 335px, 100%, 620px);
     margin: 0 auto;
-    .btn {
+    .c-btn {
       width: clamp(200px,80%,300px);
     }
   }
-  .service-list {
+  .p-top-service__list {
     width: 1380px;
     display: flex;
     flex-wrap: nowrap;
@@ -238,7 +238,7 @@
       flex-direction: column;
       margin-bottom: 0px;
     }
-    .service-item {
+    .p-top-service__item {
       width: 500px;
       background-color: color.$sub-gray;
       border-radius: color.$border-radius;
@@ -248,7 +248,7 @@
         border-radius: 30px 30px 0px 0px;
         padding: 25px;
       }
-      .service-item-box {
+      .p-top-service-item__box {
         width: 88%;
         display: flex;
         flex-direction: column;
@@ -257,7 +257,7 @@
           width: clamp( 306px, 100%, 450px );
           margin: 0 auto;
         }
-        .service-item-number {
+        .p-top-service-item__number {
           font-size: 70px;
           font-weight: bold;
           font-style: italic;
@@ -270,7 +270,7 @@
             margin-bottom: 20px;
           }
         }
-        .service-item-name {
+        .p-top-service-item__name {
           font-size: 20px;
           font-weight: bold;
           margin-bottom: 20px;
@@ -278,7 +278,7 @@
             font-size: clamp( 17px, 4.5vw, 20px );
           }
         }
-        .service-item-img {
+        .p-top-service-item__img {
           width: 100%;
           margin-bottom: 0px;
           border-radius: 20px;
@@ -288,7 +288,7 @@
             border-radius: 10px;
           }
         }
-        .service-item-text {
+        .p-top-service-item__text {
           font-size: 14px;
           width: 100%;
           line-height: 24px;
@@ -328,7 +328,7 @@
           border-radius: 30px;
           transform: translateX(0px)translateY(-30px);
         }
-        .service-item-box {
+        .p-top-service-item__box {
           width: 100%;
           @include mixin.sp {
             width: clamp( 306px, 100%, 560px );

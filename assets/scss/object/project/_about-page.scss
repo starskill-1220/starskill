@@ -1,7 +1,7 @@
-@use "../foundation/color";
-@use "../foundation/mixin";
-.content-box {
-  .page-about-box {
+@use "../../foundation/color";
+@use "../../foundation/mixin";
+.l-content__wrapper {
+  .l-content__container {
     margin-bottom: 40px;
     p {
       line-height: 30px;

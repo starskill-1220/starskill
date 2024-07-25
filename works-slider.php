@@ -105,7 +105,7 @@
     </ul>
   <!-- <h2 class="section-headtext strong-color">WORKS</h2>
   </div>
-  <a class="btn" href="<?php echo home_url('/'); ?>/works">制作事例一覧へ</a> -->
+  <a class="c-btn" href="<?php echo home_url('/'); ?>/works">制作事例一覧へ</a> -->
 </section>
 
 

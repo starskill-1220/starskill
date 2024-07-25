@@ -13,20 +13,24 @@ Version: 1.0
 @use "foundation/base";
 @use "foundation/elements";
 
+@use "layout/page";
 @use "layout/header";
 @use "layout/works-slider";
 @use "layout/footer";
+@use "layout/heading";
 
-@use "layout/top";
-@use "layout/service-page";
-@use "layout/works-page";
-@use "layout/works-content";
-@use "layout/about-page";
-@use "layout/contact-page";
-@use "layout/privacy-page";
+@use "object/project/top";
+@use "object/project/service-page";
+@use "object/project/works-page";
+@use "object/project/works-content";
+@use "object/project/about-page";
+@use "object/project/contact-page";
+@use "object/project/privacy-page";
 
 
 // ライブラリ
 @use "layout/menu-trigger";
 @use "layout/service-works-loop-slider";
 @use "object/component/pointer";
+@use "object/component/btn";
+@use "object/component/scrolldown";
